@@ -1,15 +1,15 @@
 /* ==========================================================================
    samba.lv - Sludinājumu Portāls
-   Mūsdienīgs, acīm ērts un uzticams Safīra Zils (Royal Navy) stils.
+   Mūsdienīgs, svaigs un acīm patīkams Tirkīza / Teal (Nordic Teal) stils.
    ========================================================================== */
 
 :root {
-  --brand-primary: #2563EB;       /* Dzidrs, patīkams karaliski zils akcents */
-  --brand-primary-dark: #1E40AF;  /* Dziļi zils tonis pogām un saitēm */
-  --brand-header-bg: #1E293B;     /* Mierīgs, elegants tumši zils/pelēks galvenes fons */
-  --brand-header-grad: linear-gradient(180deg, #1E3A8A 0%, #0F172A 100%);
+  --brand-primary: #0D9488;       /* Dzidrs, elegants tirkīza (Teal) tonis */
+  --brand-primary-dark: #0F766E;  /* Dziļš tirkīza tonis pogām un saitēm */
+  --brand-header-bg: #115E59;     /* Dziļš ziemeļu tirkīza/slānekļa galvenes fons */
+  --brand-header-grad: linear-gradient(180deg, #115E59 0%, #042F2E 100%);
   --brand-subtle-bg: #F8FAFC;     /* Acīm maigs, gaišs fona tonis */
-  --brand-border: #2563EB;        /* Sadaļu līniju akcents */
+  --brand-border: #0D9488;        /* Sadaļu līniju akcents */
   --brand-border-subtle: #E2E8F0;
   
   --text-main: #0F172A;
@@ -48,8 +48,8 @@ a {
 }
 
 /* ==========================================================================
-   Top Header Bar (Mūsdienīgs Safīra Zils)
-   ======================================================================== */
+   Top Header Bar (Mūsdienīgs Nordic Teal)
+   ========================================================================== */
 .ss-top-header {
   background: var(--brand-header-grad);
   color: #FFFFFF;
@@ -81,7 +81,7 @@ a {
   font-size: 0.65rem;
   font-weight: 700;
   letter-spacing: 2.5px;
-  color: #93C5FD;
+  color: #99F6E4;
   margin-top: 2px;
 }
 
@@ -104,7 +104,7 @@ a {
 
 .ss-nav-links a:hover {
   text-decoration: underline;
-  color: #BFDBFE;
+  color: #CCFBF1;
 }
 
 .ss-lang {
@@ -154,7 +154,7 @@ a {
 
 .ss-search-input:focus {
   border-color: var(--brand-primary);
-  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+  box-shadow: 0 0 0 2px rgba(13, 148, 136, 0.18);
 }
 
 .ss-search-btn {
