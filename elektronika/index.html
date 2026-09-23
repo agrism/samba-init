@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Elektronika un Tehnika – Samba.lv</title>
-  <meta name="title" content="Elektronika un Tehnika – Samba.lv" />
+  <title>Elektrotehnika un Elektronika – Samba.lv</title>
+  <meta name="title" content="Elektrotehnika un Elektronika – Samba.lv" />
   <meta name="description" content="Mobilie telefoni, datori, sadzīves tehnika, audio, video un fototehnika Latvijā platformā samba.lv." />
   <meta name="keywords" content="mobilie telefoni, datori, portatīvie datori, televizori, sadzīves tehnika, spēļu konsoles, samba.lv" />
   <meta name="robots" content="index, follow" />
@@ -13,12 +13,12 @@
 
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://samba.lv/elektronika/" />
-  <meta property="og:title" content="Elektronika un Tehnika – Samba.lv" />
+  <meta property="og:title" content="Elektrotehnika un Elektronika – Samba.lv" />
   <meta property="og:description" content="Telefoni, datori, audio/video un sadzīves tehnika visā Latvijā." />
   <meta property="og:image" content="https://samba.lv/favicon.svg" />
 
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
-  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/styles.css?v=3.0" />
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YKYEBR5S0B"></script>
   <script>
@@ -42,7 +42,7 @@
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Elektronika",
+        "name": "Elektrotehnika",
         "item": "https://samba.lv/elektronika/"
       }
     ]
@@ -51,129 +51,131 @@
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="container header-container">
-      <a href="/" class="brand-logo" title="Samba.lv Sākumlapa">
-        <img src="../favicon.svg" alt="Samba Logo" />
-        <span>samba<span class="tld">.lv</span></span>
+  <header class="ss-top-header">
+    <div class="container ss-header-inner">
+      <a href="/" class="ss-brand" title="Samba.lv Sludinājumi">
+        <span class="ss-logo-title">SAMBA<span style="color: #FFDE59;">.LV</span></span>
+        <span class="ss-logo-subtitle">SLUDINĀJUMI</span>
       </a>
 
-      <nav class="main-nav" aria-label="Navigācija">
-        <ul>
-          <li><a href="/">Sākums</a></li>
-          <li><a href="/#kategorijas">Visas kategorijas</a></li>
-          <li><a href="/#statuss">Par platformu</a></li>
-          <li><a href="/#kontakti">Kontakti</a></li>
+      <nav aria-label="Galvenā navigācija">
+        <ul class="ss-nav-links">
+          <li><a href="/#statuss">&bull; Iesniegt Sludinājumu</a></li>
+          <li><a href="/#statuss">&bull; Mani Sludinājumi</a></li>
+          <li><a href="/#kategorijas">&bull; Meklēšana</a></li>
+          <li><a href="/#statuss">&bull; Memo</a></li>
+          <li><span class="ss-lang">LV</span></li>
         </ul>
       </nav>
-
-      <div>
-        <span class="header-badge">Izstrādes stadijā</span>
-      </div>
     </div>
   </header>
 
-  <section class="hero-section" style="padding: 36px 0 28px; text-align: left;">
-    <div class="container">
-      <div style="font-size: 0.85rem; color: var(--color-muted); margin-bottom: 12px;">
-        <a href="/" style="color: var(--color-primary);">Sākums</a> &gt; <span>Elektronika</span>
+  <div class="ss-subbar">
+    <div class="container ss-subbar-inner">
+      <div style="font-size: 0.88rem; color: var(--text-muted);">
+        <a href="/" style="color: var(--brand-primary); font-weight: 700;">Sākums</a> &gt; <span style="color: var(--text-main); font-weight: bold;">Elektrotehnika</span>
       </div>
-      <h1 style="font-size: 2rem; margin-bottom: 8px;">📱 Elektronika un Tehnika</h1>
-      <p style="color: var(--color-muted); max-width: 800px; font-size: 0.95rem;">
-        Pērc un pārdod jaunus un lietotus viedtālruņus, datorus, sadzīves tehniku, televizorus un audioiekārtas.
-      </p>
+      <div class="ss-search-form">
+        <input type="text" id="categorySearchInput" class="ss-search-input" placeholder="Meklēt tehniku (piem., iPhone, MacBook, TV)..." />
+        <button id="searchButton" type="button" class="ss-search-btn">Meklēt</button>
+      </div>
     </div>
-  </section>
+  </div>
 
-  <section class="section">
+  <main class="ss-main-catalog">
     <div class="container">
-      <div class="section-head">
-        <h2>Elektronikas apakškategorijas</h2>
-        <p>Visi tehnoloģiju un iekārtu sludinājumi</p>
+      
+      <div style="margin-bottom: 24px; padding-bottom: 12px; border-bottom: 1px solid var(--brand-border-subtle);">
+        <h1 style="font-size: 1.6rem; color: var(--text-main); margin-bottom: 4px;">Elektrotehnika un Sadzīves Tehnika</h1>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">
+          Mobilie tālruņi, datori, sadzīves tehnika, televizori, audio un fotoiekārtas.
+        </p>
       </div>
 
-      <div class="categories-container" style="grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));">
+      <div class="ss-grid-4col" id="categoriesGrid">
         
-        <div class="category-block">
-          <h3 class="category-title">Mobilie telefoni</h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/">Apple iPhone</a></li>
-            <li class="subcat-item"><a href="/">Samsung Galaxy</a></li>
-            <li class="subcat-item"><a href="/">Xiaomi, Huawei un citi</a></li>
-            <li class="subcat-item"><a href="/">Viedpulksteņi un aksesuāri</a></li>
-          </ul>
-        </div>
-
-        <div class="category-block">
-          <h3 class="category-title">Datori un biroja tehnika</h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/">Portatīvie datori (MacBook, Windows)</a></li>
-            <li class="subcat-item"><a href="/">Stacionārie spēļu un darba datori</a></li>
-            <li class="subcat-item"><a href="/">Monitori un printeri</a></li>
-            <li class="subcat-item"><a href="/">Datoru komponentes (videokartes, SSD)</a></li>
-          </ul>
-        </div>
-
-        <div class="category-block">
-          <h3 class="category-title">Sadzīves tehnika</h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/">Veļasmašīnas un žāvētāji</a></li>
-            <li class="subcat-item"><a href="/">Ledusskapji un saldētavas</a></li>
-            <li class="subcat-item"><a href="/">Plītis, cepeškrāsnis un tvaika nosūcēji</a></li>
-            <li class="subcat-item"><a href="/">Putekļusūcēji un robotputekļsūcēji</a></li>
-          </ul>
-        </div>
-
-        <div class="category-block">
-          <h3 class="category-title">Audio, TV un spēles</h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/">OLED, QLED un LED televizori</a></li>
-            <li class="subcat-item"><a href="/">Hi-Fi akustika un pastiprinātāji</a></li>
-            <li class="subcat-item"><a href="/">PlayStation, Xbox un Nintendo</a></li>
-            <li class="subcat-item"><a href="/">Fotoaparāti un objektīvi</a></li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-top">
-        <div>
-          <div class="brand-logo" style="color: #FFFFFF;">
-            <img src="../favicon.svg" alt="Samba Logo" />
-            <span>samba<span class="tld">.lv</span></span>
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <span class="ss-cat-title">Sakaru līdzekļi</span>
           </div>
-          <p class="footer-desc">Latvijas universālā sludinājumu platforma.</p>
-        </div>
-
-        <div class="footer-col">
-          <h4>Sadaļas</h4>
-          <ul class="footer-links">
-            <li><a href="/transports/">Transports</a></li>
-            <li><a href="/nekustamie-ipasumi/">Nekustamais īpašums</a></li>
-            <li><a href="/darbs/">Darbs un pakalpojumi</a></li>
-            <li><a href="/elektronika/">Elektronika</a></li>
+          <ul class="ss-subcat-list">
+            <li><a href="/elektronika/">Apple iPhone</a></li>
+            <li><a href="/elektronika/">Samsung Galaxy</a></li>
+            <li><a href="/elektronika/">Xiaomi, Huawei un citi</a></li>
+            <li><a href="/elektronika/">Viedpulksteņi un aproces</a></li>
           </ul>
         </div>
 
-        <div class="footer-col">
-          <h4>Navigācija</h4>
-          <ul class="footer-links">
-            <li><a href="/">Sākumlapa</a></li>
-            <li><a href="/sitemap.xml">Vietnes karte</a></li>
-            <li><a href="mailto:info@samba.lv">info@samba.lv</a></li>
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <span class="ss-cat-title">Datori un orgtehnika</span>
+          </div>
+          <ul class="ss-subcat-list">
+            <li><a href="/elektronika/">Portatīvie datori</a></li>
+            <li><a href="/elektronika/">Stacionārie spēļu datori</a></li>
+            <li><a href="/elektronika/">Monitori un printeri</a></li>
+            <li><a href="/elektronika/">Datoru komponentes (SSD, GPU)</a></li>
           </ul>
         </div>
+
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <span class="ss-cat-title">Sadzīves tehnika</span>
+          </div>
+          <ul class="ss-subcat-list">
+            <li><a href="/elektronika/">Veļasmašīnas un žāvētāji</a></li>
+            <li><a href="/elektronika/">Ledusskapji un saldētavas</a></li>
+            <li><a href="/elektronika/">Cepeškrāsnis un plītis</a></li>
+            <li><a href="/elektronika/">Putekļusūcēji un roboti</a></li>
+          </ul>
+        </div>
+
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <span class="ss-cat-title">Audio, TV un foto</span>
+          </div>
+          <ul class="ss-subcat-list">
+            <li><a href="/elektronika/">LED, OLED televizori</a></li>
+            <li><a href="/elektronika/">Hi-Fi akustika un pastiprinātāji</a></li>
+            <li><a href="/elektronika/">PlayStation, Xbox konsoles</a></li>
+            <li><a href="/elektronika/">Fotoaparāti un objektīvi</a></li>
+          </ul>
+        </div>
+
       </div>
 
-      <div class="footer-bottom">
-        <div>&copy; 2026 Samba.lv. Visas tiesības aizsargātas.</div>
+      <section class="ss-info-box">
+        <h3>Tehnikas tirdzniecība</h3>
+        <p>
+          Interneta veikaliem un servisa centriem būs pieejama ērta sludinājumu integrācija un garantijas atzīmes.
+        </p>
+        <p style="margin-bottom: 0;">
+          Jautājumiem: <a href="mailto:info@samba.lv" style="color: var(--brand-primary); font-weight: bold;">info@samba.lv</a>.
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="ss-footer">
+    <div class="container">
+      <ul class="ss-footer-links">
+        <li><a href="/">Sākumlapa</a></li>
+        <li>|</li>
+        <li><a href="/transports/">Transports</a></li>
+        <li>|</li>
+        <li><a href="/elektronika/">Elektrotehnika</a></li>
+        <li>|</li>
+        <li><a href="mailto:info@samba.lv">Saikne ar redaktoru</a></li>
+        <li>|</li>
+        <li><a href="/sitemap.xml">Vietnes karte</a></li>
+      </ul>
+      <div class="ss-copyright">
+        Sludinājumi &copy; samba.lv 2026
       </div>
     </div>
   </footer>
 
+  <script src="/app.js?v=3.0"></script>
 </body>
 </html>

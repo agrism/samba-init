@@ -11,17 +11,15 @@
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://samba.lv/darbs/" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://samba.lv/darbs/" />
   <meta property="og:title" content="Darbs, Vakances un Pakalpojumi – Samba.lv" />
   <meta property="og:description" content="Vakances, CV un visu nozaru pakalpojumi visā Latvijā." />
   <meta property="og:image" content="https://samba.lv/favicon.svg" />
 
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
-  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/styles.css?v=3.0" />
 
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YKYEBR5S0B"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -30,7 +28,6 @@
     gtag('config', 'G-YKYEBR5S0B');
   </script>
 
-  <!-- Schema.org BreadcrumbList -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -54,151 +51,134 @@
 </head>
 <body>
 
-  <!-- Galvene -->
-  <header class="site-header">
-    <div class="container header-container">
-      <a href="/" class="brand-logo" title="Samba.lv Sākumlapa">
-        <img src="../favicon.svg" alt="Samba Logo" />
-        <span>samba<span class="tld">.lv</span></span>
+  <header class="ss-top-header">
+    <div class="container ss-header-inner">
+      <a href="/" class="ss-brand" title="Samba.lv Sludinājumi">
+        <span class="ss-logo-title">SAMBA<span style="color: #FFDE59;">.LV</span></span>
+        <span class="ss-logo-subtitle">SLUDINĀJUMI</span>
       </a>
 
-      <nav class="main-nav" aria-label="Navigācija">
-        <ul>
-          <li><a href="/">Sākums</a></li>
-          <li><a href="/#kategorijas">Visas kategorijas</a></li>
-          <li><a href="/#statuss">Par platformu</a></li>
-          <li><a href="/#kontakti">Kontakti</a></li>
+      <nav aria-label="Galvenā navigācija">
+        <ul class="ss-nav-links">
+          <li><a href="/#statuss">&bull; Iesniegt Sludinājumu</a></li>
+          <li><a href="/#statuss">&bull; Mani Sludinājumi</a></li>
+          <li><a href="/#kategorijas">&bull; Meklēšana</a></li>
+          <li><a href="/#statuss">&bull; Memo</a></li>
+          <li><span class="ss-lang">LV</span></li>
         </ul>
       </nav>
-
-      <div>
-        <span class="header-badge">Izstrādes stadijā</span>
-      </div>
     </div>
   </header>
 
-  <!-- Breadcrumbs & Virsraksts -->
-  <section class="hero-section" style="padding: 36px 0 28px; text-align: left;">
-    <div class="container">
-      <div style="font-size: 0.85rem; color: var(--color-muted); margin-bottom: 12px;">
-        <a href="/" style="color: var(--color-primary);">Sākums</a> &gt; <span>Darbs un pakalpojumi</span>
+  <div class="ss-subbar">
+    <div class="container ss-subbar-inner">
+      <div style="font-size: 0.88rem; color: var(--text-muted);">
+        <a href="/" style="color: var(--brand-primary); font-weight: 700;">Sākums</a> &gt; <span style="color: var(--text-main); font-weight: bold;">Darbs un bizness</span>
       </div>
-      <h1 style="font-size: 2rem; margin-bottom: 8px;">💼 Darbs un Pakalpojumi</h1>
-      <p style="color: var(--color-muted); max-width: 800px; font-size: 0.95rem;">
-        Aktuālās vakances, speciālistu meklēšana un plašs privāto meistaru un uzņēmumu pakalpojumu katalogs Latvijā.
-      </p>
+      <div class="ss-search-form">
+        <input type="text" id="categorySearchInput" class="ss-search-input" placeholder="Meklēt vakances (piem., šoferis, būvnieks, grāmatvedis)..." />
+        <button id="searchButton" type="button" class="ss-search-btn">Meklēt</button>
+      </div>
     </div>
-  </section>
+  </div>
 
-  <!-- 2. Līmeņa Apakškategorijas -->
-  <section class="section">
+  <main class="ss-main-catalog">
     <div class="container">
-      <div class="section-head">
-        <h2>Darba un pakalpojumu apakškategorijas</h2>
-        <p>Pārskati visas piedāvātās profesijas un nozares</p>
+      
+      <div style="margin-bottom: 24px; padding-bottom: 12px; border-bottom: 1px solid var(--brand-border-subtle);">
+        <h1 style="font-size: 1.6rem; color: var(--text-main); margin-bottom: 4px;">Darbs un Bizness</h1>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">
+          Aktuālās vakances, darba piedāvājumi un privāto meistaru un uzņēmumu pakalpojumi visā Latvijā.
+        </p>
       </div>
 
-      <div class="categories-container" style="grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));">
+      <div class="ss-grid-4col" id="categoriesGrid">
         
-        <div class="category-block">
-          <h3 class="category-title">Vakances (Piedāvā darbu)</h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/">Būvniecība un ražošana</a></li>
-            <li class="subcat-item"><a href="/">Tirdzniecība un klientu serviss</a></li>
-            <li class="subcat-item"><a href="/">Transports un šoferi</a></li>
-            <li class="subcat-item"><a href="/">IT, programmēšana un mārketings</a></li>
-            <li class="subcat-item"><a href="/">Ēdināšana, restorāni un viesmīlība</a></li>
-            <li class="subcat-item"><a href="/">Vadība un administrācija</a></li>
-          </ul>
-        </div>
-
-        <div class="category-block">
-          <h3 class="category-title">Meklē darbu / CV</h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/">Pilnas slodzes darba meklētāji</a></li>
-            <li class="subcat-item"><a href="/">Nepilnas slodzes un attālinātais darbs</a></li>
-            <li class="subcat-item"><a href="/">Sezonas un studentu darbs</a></li>
-          </ul>
-        </div>
-
-        <div class="category-block">
-          <h3 class="category-title">Būvniecība un remonts</h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/">Dzīvokļu un māju iekšdarbi</a></li>
-            <li class="subcat-item"><a href="/">Fasādes, jumti un betonēšana</a></li>
-            <li class="subcat-item"><a href="/">Elektriķu un santehniķu pakalpojumi</a></li>
-            <li class="subcat-item"><a href="/">Celtniecības tehnika un rakšanas darbi</a></li>
-          </ul>
-        </div>
-
-        <div class="category-block">
-          <h3 class="category-title">Transports un loģistika</h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/">Kravu pārvadājumi Latvijā un Eiropā</a></li>
-            <li class="subcat-item"><a href="/">Pārvākšanās serviss un krāvēji</a></li>
-            <li class="subcat-item"><a href="/">Kurjeru un piegādes pakalpojumi</a></li>
-          </ul>
-        </div>
-
-        <div class="category-block">
-          <h3 class="category-title">Biznesa pakalpojumi</h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/">Grāmatvedība un nodokļu konsultācijas</a></li>
-            <li class="subcat-item"><a href="/">Juridiskie pakalpojumi un līgumi</a></li>
-            <li class="subcat-item"><a href="/">Tulkošana un tekstu sagatavošana</a></li>
-          </ul>
-        </div>
-
-        <div class="category-block">
-          <h3 class="category-title">Skaistumkopšana un veselība</h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/">Frizieri, manikīrs un kosmētika</a></li>
-            <li class="subcat-item"><a href="/">Masāža un fizioterapija</a></li>
-            <li class="subcat-item"><a href="/">Treneri un uztura speciālisti</a></li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Kājene -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-top">
-        <div>
-          <div class="brand-logo" style="color: #FFFFFF;">
-            <img src="../favicon.svg" alt="Samba Logo" />
-            <span>samba<span class="tld">.lv</span></span>
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <span class="ss-cat-title">Vakances (Piedāvā darbu)</span>
           </div>
-          <p class="footer-desc">Latvijas universālā sludinājumu platforma.</p>
-        </div>
-
-        <div class="footer-col">
-          <h4>Sadaļas</h4>
-          <ul class="footer-links">
-            <li><a href="/transports/">Transports</a></li>
-            <li><a href="/nekustamie-ipasumi/">Nekustamais īpašums</a></li>
-            <li><a href="/darbs/">Darbs un pakalpojumi</a></li>
-            <li><a href="/elektronika/">Elektronika</a></li>
+          <ul class="ss-subcat-list">
+            <li><a href="/darbs/">Būvniecība un ražošana</a></li>
+            <li><a href="/darbs/">Tirdzniecība un klientu serviss</a></li>
+            <li><a href="/darbs/">Transports un loģistika</a></li>
+            <li><a href="/darbs/">IT, programmēšana un dizains</a></li>
+            <li><a href="/darbs/">Ēdināšana un restorāni</a></li>
           </ul>
         </div>
 
-        <div class="footer-col">
-          <h4>Navigācija</h4>
-          <ul class="footer-links">
-            <li><a href="/">Sākumlapa</a></li>
-            <li><a href="/sitemap.xml">Vietnes karte</a></li>
-            <li><a href="mailto:info@samba.lv">info@samba.lv</a></li>
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <span class="ss-cat-title">Meklē darbu / CV</span>
+          </div>
+          <ul class="ss-subcat-list">
+            <li><a href="/darbs/">Pilnas slodzes darbs</a></li>
+            <li><a href="/darbs/">Attālinātais darbs</a></li>
+            <li><a href="/darbs/">Nepilnas slodzes darbs</a></li>
+            <li><a href="/darbs/">Sezonas un studentu darbs</a></li>
           </ul>
         </div>
+
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <span class="ss-cat-title">Remonta un būvdarbi</span>
+          </div>
+          <ul class="ss-subcat-list">
+            <li><a href="/darbs/">Dzīvokļu un māju iekšdarbi</a></li>
+            <li><a href="/darbs/">Fasādes, jumti un betonēšana</a></li>
+            <li><a href="/darbs/">Elektriķu pakalpojumi</a></li>
+            <li><a href="/darbs/">Santehnikas pakalpojumi</a></li>
+          </ul>
+        </div>
+
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <span class="ss-cat-title">Biznesa pakalpojumi</span>
+          </div>
+          <ul class="ss-subcat-list">
+            <li><a href="/darbs/">Grāmatvedība un audits</a></li>
+            <li><a href="/darbs/">Juridiskie pakalpojumi</a></li>
+            <li><a href="/darbs/">Tulkošana un teksti</a></li>
+            <li><a href="/darbs/">Mārketings un reklāma</a></li>
+          </ul>
+        </div>
+
       </div>
 
-      <div class="footer-bottom">
-        <div>&copy; 2026 Samba.lv. Visas tiesības aizsargātas.</div>
+      <section class="ss-info-box">
+        <h3>Vakanču ievietošana</h3>
+        <p>
+          Uzņēmumiem un personāla atlases aģentūrām būs pieejami izdevīgi sludinājumu komplekti un profila verifikācija.
+        </p>
+        <p style="margin-bottom: 0;">
+          Saziņai: <a href="mailto:info@samba.lv" style="color: var(--brand-primary); font-weight: bold;">info@samba.lv</a>.
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="ss-footer">
+    <div class="container">
+      <ul class="ss-footer-links">
+        <li><a href="/">Sākumlapa</a></li>
+        <li>|</li>
+        <li><a href="/transports/">Transports</a></li>
+        <li>|</li>
+        <li><a href="/nekustamie-ipasumi/">Nekustamais īpašums</a></li>
+        <li>|</li>
+        <li><a href="/darbs/">Darbs</a></li>
+        <li>|</li>
+        <li><a href="mailto:info@samba.lv">Saikne ar redaktoru</a></li>
+        <li>|</li>
+        <li><a href="/sitemap.xml">Vietnes karte</a></li>
+      </ul>
+      <div class="ss-copyright">
+        Sludinājumi &copy; samba.lv 2026
       </div>
     </div>
   </footer>
 
+  <script src="/app.js?v=3.0"></script>
 </body>
 </html>

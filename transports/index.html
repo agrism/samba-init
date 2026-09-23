@@ -18,8 +18,8 @@
   <meta property="og:description" content="Vieglie un kravas auto, motocikli, detaļas un riepas visā Latvijā." />
   <meta property="og:image" content="https://samba.lv/favicon.svg" />
 
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
-  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/styles.css?v=3.0" />
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YKYEBR5S0B"></script>
@@ -54,176 +54,188 @@
 </head>
 <body>
 
-  <!-- Galvene -->
-  <header class="site-header">
-    <div class="container header-container">
-      <a href="/" class="brand-logo" title="Samba.lv Sākumlapa">
-        <img src="../favicon.svg" alt="Samba Logo" />
-        <span>samba<span class="tld">.lv</span></span>
+  <!-- Top Header Bar -->
+  <header class="ss-top-header">
+    <div class="container ss-header-inner">
+      <a href="/" class="ss-brand" title="Samba.lv Sludinājumi">
+        <span class="ss-logo-title">SAMBA<span style="color: #FFDE59;">.LV</span></span>
+        <span class="ss-logo-subtitle">SLUDINĀJUMI</span>
       </a>
 
-      <nav class="main-nav" aria-label="Navigācija">
-        <ul>
-          <li><a href="/">Sākums</a></li>
-          <li><a href="/#kategorijas">Visas kategorijas</a></li>
-          <li><a href="/#statuss">Par platformu</a></li>
-          <li><a href="/#kontakti">Kontakti</a></li>
+      <nav aria-label="Galvenā navigācija">
+        <ul class="ss-nav-links">
+          <li><a href="/#statuss">&bull; Iesniegt Sludinājumu</a></li>
+          <li><a href="/#statuss">&bull; Mani Sludinājumi</a></li>
+          <li><a href="/#kategorijas">&bull; Meklēšana</a></li>
+          <li><a href="/#statuss">&bull; Memo</a></li>
+          <li><span class="ss-lang">LV</span></li>
         </ul>
       </nav>
-
-      <div>
-        <span class="header-badge">Izstrādes stadijā</span>
-      </div>
     </div>
   </header>
 
-  <!-- Breadcrumbs & Virsraksts -->
-  <section class="hero-section" style="padding: 36px 0 28px; text-align: left;">
-    <div class="container">
-      <div style="font-size: 0.85rem; color: var(--color-muted); margin-bottom: 12px;">
-        <a href="/" style="color: var(--color-primary);">Sākums</a> &gt; <span>Transports</span>
+  <!-- Subbar ar Breadcrumbs -->
+  <div class="ss-subbar">
+    <div class="container ss-subbar-inner">
+      <div style="font-size: 0.88rem; color: var(--text-muted);">
+        <a href="/" style="color: var(--brand-primary); font-weight: 700;">Sākums</a> &gt; <span style="color: var(--text-main); font-weight: bold;">Transports</span>
       </div>
-      <h1 style="font-size: 2rem; margin-bottom: 8px;">🚗 Transports un Auto</h1>
-      <p style="color: var(--color-muted); max-width: 800px; font-size: 0.95rem;">
-        Plašākā transporta un auto sludinājumu sadaļa Latvijā. Atrodi jaunu vai lietotu automašīnu, motociklu, komerctransportu, rezerves daļas un servisa pakalpojumus.
-      </p>
+      <div class="ss-search-form">
+        <input type="text" id="categorySearchInput" class="ss-search-input" placeholder="Meklēt transporta sadaļā (piem., BMW, Audi, riepas)..." />
+        <button id="searchButton" type="button" class="ss-search-btn">Meklēt</button>
+      </div>
     </div>
-  </section>
+  </div>
 
-  <!-- 2. Līmeņa Apakškategorijas -->
-  <section class="section">
+  <!-- Kategoriju Katalogs -->
+  <main class="ss-main-catalog">
     <div class="container">
-      <div class="section-head">
-        <h2>Transporta apakškategorijas</h2>
-        <p>Izvēlies interesējošo sadaļu, lai skatītu sludinājumu struktūru</p>
-      </div>
-
-      <div class="categories-container" style="grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));">
-        
-        <div class="category-block">
-          <h3 class="category-title">Vieglie auto</h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/">Audi, BMW, Volkswagen, Mercedes</a></li>
-            <li class="subcat-item"><a href="/">Volvo, Toyota, Škoda, Ford</a></li>
-            <li class="subcat-item"><a href="/">Elektroauto un Hibrīdi</a></li>
-            <li class="subcat-item"><a href="/">Visi vieglo auto sludinājumi &rarr;</a></li>
-          </ul>
-        </div>
-
-        <div class="category-block">
-          <h3 class="category-title">Apvidus auto (SUV)</h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/">Kompaktie un pilnizmēra apvidnieki</a></li>
-            <li class="subcat-item"><a href="/">4x4 un bezceļu transports</a></li>
-            <li class="subcat-item"><a href="/">Visi apvidus auto &rarr;</a></li>
-          </ul>
-        </div>
-
-        <div class="category-block">
-          <h3 class="category-title">Mototransports</h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/">Šosejas motocikli un čoperi</a></li>
-            <li class="subcat-item"><a href="/">Enduro, Krosa motocikli</a></li>
-            <li class="subcat-item"><a href="/">Motorolleri un mopēdi</a></li>
-            <li class="subcat-item"><a href="/">Kvadricikli (ATV) un bagiji</a></li>
-          </ul>
-        </div>
-
-        <div class="category-block">
-          <h3 class="category-title">Kravas un komerctransports</h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/">Kravas automašīnas un vilcēji</a></li>
-            <li class="subcat-item"><a href="/">Mikroautobusi un busiņi</a></li>
-            <li class="subcat-item"><a href="/">Piekabes un puspiekabes</a></li>
-            <li class="subcat-item"><a href="/">Manipulatori un spectehnika</a></li>
-          </ul>
-        </div>
-
-        <div class="category-block">
-          <h3 class="category-title">Rezerves daļas un aksesuāri</h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/">Dzinēja un ritošās daļas detaļas</a></li>
-            <li class="subcat-item"><a href="/">Virsbūves daļas un optika</a></li>
-            <li class="subcat-item"><a href="/">Auto elektronika un audio</a></li>
-            <li class="subcat-item"><a href="/">Salona aprīkojums un aksesuāri</a></li>
-          </ul>
-        </div>
-
-        <div class="category-block">
-          <h3 class="category-title">Riepas un diski</h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/">Vasaras, ziemas un vissezonas riepas</a></li>
-            <li class="subcat-item"><a href="/">Lietie un dzelzs diski (R14-R22)</a></li>
-            <li class="subcat-item"><a href="/">Riepu montāža un balansēšana</a></li>
-          </ul>
-        </div>
-
-        <div class="category-block">
-          <h3 class="category-title">Ūdens transports</h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/">Kateri, kuteri un jahtas</a></li>
-            <li class="subcat-item"><a href="/">Motorlaivas un gumijas laivas</a></li>
-            <li class="subcat-item"><a href="/">Ūdensmotocikli un motori</a></li>
-          </ul>
-        </div>
-
-        <div class="category-block">
-          <h3 class="category-title">Pakalpojumi un noma</h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/">Autoservisi un diagnostika</a></li>
-            <li class="subcat-item"><a href="/">Auto noma un transfērs</a></li>
-            <li class="subcat-item"><a href="/">Auto evakuācija un palīdzība</a></li>
-          </ul>
-        </div>
-
-      </div>
-
-      <div style="margin-top: 36px; padding: 20px; background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: var(--radius-md);">
-        <h4 style="margin-bottom: 6px;">Informācija par sludinājumu izvietošanu:</h4>
-        <p style="font-size: 0.9rem; color: var(--color-muted);">
-          Transporta sadaļas sludinājumu ievietošana privātpersonām un auto tirdzniecības uzņēmumiem tiks atvērta drīzumā. XML sinhronizācijas jautājumos lūdzam rakstīt: <a href="mailto:info@samba.lv" style="color: var(--color-primary); font-weight: 600;">info@samba.lv</a>.
+      
+      <div style="margin-bottom: 24px; padding-bottom: 12px; border-bottom: 1px solid var(--brand-border-subtle);">
+        <h1 style="font-size: 1.6rem; color: var(--text-main); margin-bottom: 4px;">Transports un Auto</h1>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">
+          Plašākā auto un transporta sludinājumu sadaļa Latvijā. Vieglie auto, kravas tehnika, moto, rezerves daļas un serviss.
         </p>
       </div>
-    </div>
-  </section>
 
-  <!-- Kājene -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-top">
-        <div>
-          <div class="brand-logo" style="color: #FFFFFF;">
-            <img src="../favicon.svg" alt="Samba Logo" />
-            <span>samba<span class="tld">.lv</span></span>
+      <div class="ss-grid-4col" id="categoriesGrid">
+        
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <span class="ss-cat-title">Vieglie auto</span>
           </div>
-          <p class="footer-desc">Latvijas universālā sludinājumu platforma.</p>
-        </div>
-
-        <div class="footer-col">
-          <h4>Sadaļas</h4>
-          <ul class="footer-links">
-            <li><a href="/transports/">Transports</a></li>
-            <li><a href="/nekustamie-ipasumi/">Nekustamais īpašums</a></li>
-            <li><a href="/darbs/">Darbs un pakalpojumi</a></li>
-            <li><a href="/elektronika/">Elektronika</a></li>
+          <ul class="ss-subcat-list">
+            <li><a href="/transports/">Audi, BMW, Volkswagen, Mercedes</a></li>
+            <li><a href="/transports/">Volvo, Toyota, Škoda, Ford</a></li>
+            <li><a href="/transports/">Elektroauto un Hibrīdi</a></li>
+            <li><a href="/transports/">Kabrioleti un kupejas</a></li>
+            <li><a href="/transports/">Visi vieglie auto &rarr;</a></li>
           </ul>
         </div>
 
-        <div class="footer-col">
-          <h4>Navigācija</h4>
-          <ul class="footer-links">
-            <li><a href="/">Sākumlapa</a></li>
-            <li><a href="/sitemap.xml">Vietnes karte</a></li>
-            <li><a href="mailto:info@samba.lv">info@samba.lv</a></li>
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <span class="ss-cat-title">Apvidus auto (SUV)</span>
+          </div>
+          <ul class="ss-subcat-list">
+            <li><a href="/transports/">Kompaktie apvidus auto</a></li>
+            <li><a href="/transports/">Pilnizmēra džipi un 4x4</a></li>
+            <li><a href="/transports/">Pikapi</a></li>
+            <li><a href="/transports/">Visi apvidus auto &rarr;</a></li>
           </ul>
         </div>
+
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <span class="ss-cat-title">Mototransports</span>
+          </div>
+          <ul class="ss-subcat-list">
+            <li><a href="/transports/">Šosejas motocikli un čoperi</a></li>
+            <li><a href="/transports/">Enduro un krosa motocikli</a></li>
+            <li><a href="/transports/">Motorolleri un mopēdi</a></li>
+            <li><a href="/transports/">Kvadricikli (ATV) un bagiji</a></li>
+            <li><a href="/transports/">Moto rezerves daļas un ekipējums</a></li>
+          </ul>
+        </div>
+
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <span class="ss-cat-title">Kravas un komerctransports</span>
+          </div>
+          <ul class="ss-subcat-list">
+            <li><a href="/transports/">Kravas automašīnas un vilcēji</a></li>
+            <li><a href="/transports/">Mikroautobusi un busiņi</a></li>
+            <li><a href="/transports/">Piekabes un puspiekabes</a></li>
+            <li><a href="/transports/">Manipulatori un spectehnika</a></li>
+          </ul>
+        </div>
+
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <span class="ss-cat-title">Rezerves daļas</span>
+          </div>
+          <ul class="ss-subcat-list">
+            <li><a href="/transports/">Dzinēji un ātrumkārbas</a></li>
+            <li><a href="/transports/">Ritošā daļa un bremzes</a></li>
+            <li><a href="/transports/">Virsbūves detaļas un optika</a></li>
+            <li><a href="/transports/">Auto elektronika un audio</a></li>
+          </ul>
+        </div>
+
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <span class="ss-cat-title">Riepas un diski</span>
+          </div>
+          <ul class="ss-subcat-list">
+            <li><a href="/transports/">Ziemas riepas (ar radzēm, mīkstā sastāva)</a></li>
+            <li><a href="/transports/">Vasaras un vissezonas riepas</a></li>
+            <li><a href="/transports/">Lietie un kaltie diski</a></li>
+            <li><a href="/transports/">Riepu serviss un montāža</a></li>
+          </ul>
+        </div>
+
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <span class="ss-cat-title">Ūdens transports</span>
+          </div>
+          <ul class="ss-subcat-list">
+            <li><a href="/transports/">Kuteri, kateri un jahtas</a></li>
+            <li><a href="/transports/">Motorlaivas un gumijas laivas</a></li>
+            <li><a href="/transports/">Ūdensmotocikli</a></li>
+            <li><a href="/transports/">Laivu dzinēji un piekabes</a></li>
+          </ul>
+        </div>
+
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <span class="ss-cat-title">Pakalpojumi un noma</span>
+          </div>
+          <ul class="ss-subcat-list">
+            <li><a href="/transports/">Autoservisi un diagnostika</a></li>
+            <li><a href="/transports/">Auto noma un transfērs</a></li>
+            <li><a href="/transports/">Auto evakuācija 24/7</a></li>
+            <li><a href="/transports/">Auto ķīmiskā tīrīšana</a></li>
+          </ul>
+        </div>
+
       </div>
 
-      <div class="footer-bottom">
-        <div>&copy; 2026 Samba.lv. Visas tiesības aizsargātas.</div>
+      <!-- Informācijas bloks -->
+      <section class="ss-info-box">
+        <h3>Auto sludinājumu izvietošana</h3>
+        <p>
+          Sludinājumu ievietošana privātpersonām un uzņēmumiem transporta sadaļā tiks atvērta drīzumā. Dīleriem un autosaloniem pieejama automātiskā XML ielāde.
+        </p>
+        <p style="margin-bottom: 0;">
+          Jautājumiem: <a href="mailto:info@samba.lv" style="color: var(--brand-primary); font-weight: bold;">info@samba.lv</a>.
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="ss-footer">
+    <div class="container">
+      <ul class="ss-footer-links">
+        <li><a href="/">Sākumlapa</a></li>
+        <li>|</li>
+        <li><a href="/transports/">Transports</a></li>
+        <li>|</li>
+        <li><a href="/nekustamie-ipasumi/">Nekustamais īpašums</a></li>
+        <li>|</li>
+        <li><a href="/darbs/">Darbs</a></li>
+        <li>|</li>
+        <li><a href="mailto:info@samba.lv">Saikne ar redaktoru</a></li>
+        <li>|</li>
+        <li><a href="/sitemap.xml">Vietnes karte</a></li>
+      </ul>
+      <div class="ss-copyright">
+        Sludinājumi &copy; samba.lv 2026
       </div>
     </div>
   </footer>
 
+  <script src="/app.js?v=3.0"></script>
 </body>
 </html>

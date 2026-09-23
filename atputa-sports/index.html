@@ -6,20 +6,22 @@
   
   <title>Atpūta, Sports un Hobiji – Samba.lv</title>
   <meta name="title" content="Atpūta, Sports un Hobiji – Samba.lv" />
-  <meta name="description" content="Velosipēdi, sporta inventārs, medības, makšķerēšana, mūzikas instrumenti, grāmatas un kolekcionēšana Latvijā portālā samba.lv." />
-  <meta name="keywords" content="velosipēdi, sporta preces, trenažieri, makšķerēšana, medības, mūzikas instrumenti, grāmatas, samba.lv" />
+  <meta name="description" content="Velosipēdi, sporta inventārs, trenažieri, medības, makšķerēšana, mūzikas instrumenti, grāmatas un tūrisms Latvijā platformā samba.lv." />
+  <meta name="keywords" content="velosipēdi, sporta preces, trenažieri, makšķerēšana, medības, mūzikas instrumenti, grāmatas, tūrisms, samba.lv" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://samba.lv/atputa-sports/" />
 
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://samba.lv/atputa-sports/" />
   <meta property="og:title" content="Atpūta, Sports un Hobiji – Samba.lv" />
-  <meta property="og:description" content="Sports, velo, makšķerēšana un hobiji visā Latvijā." />
+  <meta property="og:description" content="Velosipēdi, sports, trenažieri, makšķerēšana un hobiji visā Latvijā." />
   <meta property="og:image" content="https://samba.lv/favicon.svg" />
 
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
-  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/styles.css?v=3.0" />
 
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YKYEBR5S0B"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -28,6 +30,7 @@
     gtag('config', 'G-YKYEBR5S0B');
   </script>
 
+  <!-- Schema.org BreadcrumbList -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -51,127 +54,142 @@
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="container header-container">
-      <a href="/" class="brand-logo" title="Samba.lv Sākumlapa">
-        <img src="../favicon.svg" alt="Samba Logo" />
-        <span>samba<span class="tld">.lv</span></span>
+  <!-- Top Header Bar -->
+  <header class="ss-top-header">
+    <div class="container ss-header-inner">
+      <a href="/" class="ss-brand" title="Samba.lv Sludinājumi">
+        <span class="ss-logo-title">SAMBA<span style="color: #FFDE59;">.LV</span></span>
+        <span class="ss-logo-subtitle">SLUDINĀJUMI</span>
       </a>
 
-      <nav class="main-nav" aria-label="Navigācija">
-        <ul>
-          <li><a href="/">Sākums</a></li>
-          <li><a href="/#kategorijas">Visas kategorijas</a></li>
-          <li><a href="/#statuss">Par platformu</a></li>
-          <li><a href="/#kontakti">Kontakti</a></li>
+      <nav aria-label="Galvenā navigācija">
+        <ul class="ss-nav-links">
+          <li><a href="/#statuss">&bull; Iesniegt Sludinājumu</a></li>
+          <li><a href="/#statuss">&bull; Mani Sludinājumi</a></li>
+          <li><a href="/#kategorijas">&bull; Meklēšana</a></li>
+          <li><a href="/#statuss">&bull; Memo</a></li>
+          <li><span class="ss-lang">LV</span></li>
         </ul>
       </nav>
-
-      <div>
-        <span class="header-badge">Izstrādes stadijā</span>
-      </div>
     </div>
   </header>
 
-  <section class="hero-section" style="padding: 36px 0 28px; text-align: left;">
-    <div class="container">
-      <div style="font-size: 0.85rem; color: var(--color-muted); margin-bottom: 12px;">
-        <a href="/" style="color: var(--color-primary);">Sākums</a> &gt; <span>Atpūta un sports</span>
+  <!-- Subbar ar Breadcrumbs -->
+  <div class="ss-subbar">
+    <div class="container ss-subbar-inner">
+      <div style="font-size: 0.88rem; color: var(--text-muted);">
+        <a href="/" style="color: var(--brand-primary); font-weight: 700;">Sākums</a> &gt; <span style="color: var(--text-main); font-weight: bold;">Atpūta, sports</span>
       </div>
-      <h1 style="font-size: 2rem; margin-bottom: 8px;">⚽ Atpūta, Sports un Hobiji</h1>
-      <p style="color: var(--color-muted); max-width: 800px; font-size: 0.95rem;">
-        Sludinājumi aktīvai atpūtai, sportam, makšķerēšanai, medībām, ceļojumiem un vaļaspriekiem.
-      </p>
+      <div class="ss-search-form">
+        <input type="text" id="categorySearchInput" class="ss-search-input" placeholder="Meklēt atpūtai un sportam (piem., velosipēds, trenažieris, ģitāra)..." />
+        <button id="searchButton" type="button" class="ss-search-btn">Meklēt</button>
+      </div>
     </div>
-  </section>
+  </div>
 
-  <section class="section">
+  <!-- Kategoriju Katalogs -->
+  <main class="ss-main-catalog">
     <div class="container">
-      <div class="section-head">
-        <h2>Sporta un atpūtas apakškategorijas</h2>
-        <p>Atrodi inventāru savam hobijam</p>
+      
+      <div style="margin-bottom: 24px; padding-bottom: 12px; border-bottom: 1px solid var(--brand-border-subtle);">
+        <h1 style="font-size: 1.6rem; color: var(--text-main); margin-bottom: 4px;">Atpūta, Sports un Hobiji</h1>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">
+          Velosipēdi, sporta inventārs, trenažieri, medības, makšķerēšana, mūzika, grāmatas un kolekcionēšana.
+        </p>
       </div>
 
-      <div class="categories-container" style="grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));">
+      <div class="ss-grid-4col" id="categoriesGrid">
         
-        <div class="category-block">
-          <h3 class="category-title">Velo un transports</h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/">Kalnu, šosejas un pilsētas velosipēdi</a></li>
-            <li class="subcat-item"><a href="/">Elektrovelosipēdi un skrejriteņi</a></li>
-            <li class="subcat-item"><a href="/">Velo rezerves daļas un aksesuāri</a></li>
-          </ul>
-        </div>
-
-        <div class="category-block">
-          <h3 class="category-title">Sports un trenažieri</h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/">Skrejceliņi, velotrenažieri un svari</a></li>
-            <li class="subcat-item"><a href="/">Futbola, basketbola un tenisa inventārs</a></li>
-            <li class="subcat-item"><a href="/">Ziemas sports (slēpes, snovborda dēļi, slidas)</a></li>
-          </ul>
-        </div>
-
-        <div class="category-block">
-          <h3 class="category-title">Medības un makšķerēšana</h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/">Makšķeres, spoles un mānekļi</a></li>
-            <li class="subcat-item"><a href="/">Eholotes un navigācija</a></li>
-            <li class="subcat-item"><a href="/">Medību aprīkojums un optika</a></li>
-            <li class="subcat-item"><a href="/">Teltis, guļammaisi un tūrisma piederumi</a></li>
-          </ul>
-        </div>
-
-        <div class="category-block">
-          <h3 class="category-title">Mūzika un kolekcijas</h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/">Ģitāras, sintezatori un bungas</a></li>
-            <li class="subcat-item"><a href="/">Vinila plates un audio ieraksti</a></li>
-            <li class="subcat-item"><a href="/">Monētas, banknotes un senlietas</a></li>
-            <li class="subcat-item"><a href="/">Grāmatas un žurnāli</a></li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-top">
-        <div>
-          <div class="brand-logo" style="color: #FFFFFF;">
-            <img src="../favicon.svg" alt="Samba Logo" />
-            <span>samba<span class="tld">.lv</span></span>
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <span class="ss-cat-title">Velo un transports</span>
           </div>
-          <p class="footer-desc">Latvijas universālā sludinājumu platforma.</p>
-        </div>
-
-        <div class="footer-col">
-          <h4>Sadaļas</h4>
-          <ul class="footer-links">
-            <li><a href="/transports/">Transports</a></li>
-            <li><a href="/nekustamie-ipasumi/">Nekustamais īpašums</a></li>
-            <li><a href="/atputa-sports/">Atpūta un sports</a></li>
-            <li><a href="/elektronika/">Elektronika</a></li>
+          <ul class="ss-subcat-list">
+            <li><a href="/atputa-sports/">Kalnu un šosejas velosipēdi</a></li>
+            <li><a href="/atputa-sports/">Pilsētas un tūrisma velo</a></li>
+            <li><a href="/atputa-sports/">Elektrovelosipēdi un skūteri</a></li>
+            <li><a href="/atputa-sports/">Bērnu un pusaudžu velo</a></li>
+            <li><a href="/atputa-sports/">Velo rezerves daļas un aksesuāri</a></li>
           </ul>
         </div>
 
-        <div class="footer-col">
-          <h4>Navigācija</h4>
-          <ul class="footer-links">
-            <li><a href="/">Sākumlapa</a></li>
-            <li><a href="/sitemap.xml">Vietnes karte</a></li>
-            <li><a href="mailto:info@samba.lv">info@samba.lv</a></li>
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <span class="ss-cat-title">Sports un trenažieri</span>
+          </div>
+          <ul class="ss-subcat-list">
+            <li><a href="/atputa-sports/">Skrejceliņi un velotrenažieri</a></li>
+            <li><a href="/atputa-sports/">Svari, hanteles un sols</a></li>
+            <li><a href="/atputa-sports/">Futbols, basketbols, volejbols</a></li>
+            <li><a href="/atputa-sports/">Teniss un rakešu sports</a></li>
+            <li><a href="/atputa-sports/">Ziemas sports (slēpes, snovbords)</a></li>
           </ul>
         </div>
+
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <span class="ss-cat-title">Medības un makšķerēšana</span>
+          </div>
+          <ul class="ss-subcat-list">
+            <li><a href="/atputa-sports/">Makšķeres, spoles un mānekļi</a></li>
+            <li><a href="/atputa-sports/">Eholotes un GPS navigācija</a></li>
+            <li><a href="/atputa-sports/">Medību aprīkojums un optika</a></li>
+            <li><a href="/atputa-sports/">Teltis, guļammaisi un tūrisms</a></li>
+            <li><a href="/atputa-sports/">Specializētais apģērbs un apavi</a></li>
+          </ul>
+        </div>
+
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <span class="ss-cat-title">Mūzika un kolekcijas</span>
+          </div>
+          <ul class="ss-subcat-list">
+            <li><a href="/atputa-sports/">Ģitāras un stīgu instrumenti</a></li>
+            <li><a href="/atputa-sports/">Sintezatori un klavieres</a></li>
+            <li><a href="/atputa-sports/">Vinila plates un audio ieraksti</a></li>
+            <li><a href="/atputa-sports/">Monētas, banknotes un senlietas</a></li>
+            <li><a href="/atputa-sports/">Grāmatas un žurnāli</a></li>
+          </ul>
+        </div>
+
       </div>
 
-      <div class="footer-bottom">
-        <div>&copy; 2026 Samba.lv. Visas tiesības aizsargātas.</div>
+      <!-- Informācijas bloks -->
+      <section class="ss-info-box">
+        <h3>Sporta un atpūtas sludinājumi</h3>
+        <p>
+          Privātpersonām un sporta inventāra veikaliem pieejama ērta sludinājumu publicēšana un atlaižu izvietošana.
+        </p>
+        <p style="margin-bottom: 0;">
+          Jautājumiem: <a href="mailto:info@samba.lv" style="color: var(--brand-primary); font-weight: bold;">info@samba.lv</a>.
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="ss-footer">
+    <div class="container">
+      <ul class="ss-footer-links">
+        <li><a href="/">Sākumlapa</a></li>
+        <li>|</li>
+        <li><a href="/atputa-sports/">Atpūta un sports</a></li>
+        <li>|</li>
+        <li><a href="/transports/">Transports</a></li>
+        <li>|</li>
+        <li><a href="/elektronika/">Elektrotehnika</a></li>
+        <li>|</li>
+        <li><a href="mailto:info@samba.lv">Saikne ar redaktoru</a></li>
+        <li>|</li>
+        <li><a href="/sitemap.xml">Vietnes karte</a></li>
+      </ul>
+      <div class="ss-copyright">
+        Sludinājumi &copy; samba.lv 2026
       </div>
     </div>
   </footer>
 
+  <script src="/app.js?v=3.0"></script>
 </body>
 </html>
