@@ -5,25 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <!-- SEO Pamatdati -->
-  <title>Samba.lv – Sludinājumu Portāls | Auto, Nekustamais Īpašums, Darbs, Tehnika</title>
-  <meta name="title" content="Samba.lv – Sludinājumu Portāls | Auto, Nekustamais Īpašums, Darbs, Tehnika" />
-  <meta name="description" content="Samba.lv ir universāla sludinājumu platforma Latvijā. Auto un transports, nekustamais īpašums, vakances un darbs, elektronika, būvniecība un pakalpojumi." />
-  <meta name="keywords" content="sludinājumi, auto sludinājumi, nekustamais īpašums, dzīvokļi rīgā, darbs latvijā, vakances, pārdot auto, lietotas preces, samba.lv" />
+  <title>Samba.lv – Sludinājumi | Auto, Nekustamais Īpašums, Darbs, Tehnika</title>
+  <meta name="title" content="Samba.lv – Sludinājumi | Auto, Nekustamais Īpašums, Darbs, Tehnika" />
+  <meta name="description" content="Samba.lv – sludinājumu portāls Latvijā. Auto un transports, nekustamais īpašums, vakances un darbs, celtniecība, elektronika, drēbes, mājai, dzīvnieki un lauksaimniecība." />
+  <meta name="keywords" content="sludinājumi, auto sludinājumi, nekustamais īpašums, dzīvokļi rīgā, darbs latvijā, vakances, pārdot auto, lietotas preces, samba.lv, ss" />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Samba.lv" />
   <link rel="canonical" href="https://samba.lv/" />
   
-  <!-- Google Search Console Verifikācija (Aizstāj ar savu kodu) -->
+  <!-- Google Search Console Verifikācija -->
   <meta name="google-site-verification" content="IEVIETO_SAVU_SEARCH_CONSOLE_KODU" />
 
-  <!-- Open Graph / Sociālie Tīkli -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://samba.lv/" />
   <meta property="og:title" content="Samba.lv – Sludinājumu Portāls" />
   <meta property="og:description" content="Auto, nekustamais īpašums, darbs, tehnika un pakalpojumi visā Latvijā." />
   <meta property="og:image" content="https://samba.lv/favicon.svg" />
 
-  <!-- Favicon & Stili -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="styles.css" />
 
@@ -37,7 +36,7 @@
     gtag('config', 'G-YKYEBR5S0B');
   </script>
 
-  <!-- Schema.org Strukturētie Dati -->
+  <!-- Schema.org JSON-LD Strukturētie Dati -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -47,7 +46,7 @@
         "@id": "https://samba.lv/#website",
         "url": "https://samba.lv/",
         "name": "Samba.lv",
-        "description": "Latvijas sludinājumu platforma",
+        "description": "Latvijas sludinājumu portāls",
         "inLanguage": "lv"
       },
       {
@@ -57,27 +56,6 @@
         "url": "https://samba.lv/",
         "logo": "https://samba.lv/favicon.svg",
         "email": "info@samba.lv"
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Kas ir Samba.lv?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Samba.lv ir jauna sludinājumu platforma Latvijā, kas aptver transporta, nekustamo īpašumu, vakanču, tehnikas un pakalpojumu sadaļas."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Kad varēs ievietot sludinājumus?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Sludinājumu ievietošanas un lietotāju reģistrācijas modulis pašlaik tiek tehniski sagatavots un tiks atvērts tuvākajā laikā."
-            }
-          }
-        ]
       }
     ]
   }
@@ -85,361 +63,383 @@
 </head>
 <body>
 
-  <!-- Galvene -->
-  <header class="site-header">
-    <div class="container header-container">
-      <a href="https://samba.lv/" class="brand-logo" title="Samba.lv Sākumlapa">
-        <img src="favicon.svg" alt="Samba Logo" />
-        <span>samba<span class="tld">.lv</span></span>
+  <!-- ========================================================================
+       Top Header Bar (SS Stils)
+       ======================================================================== -->
+  <header class="ss-top-header">
+    <div class="container ss-header-inner">
+      <a href="/" class="ss-brand" title="Samba.lv Sludinājumi">
+        <span class="ss-logo-title">SAMBA<span style="color: #FFDE59;">.LV</span></span>
+        <span class="ss-logo-subtitle">SLUDINĀJUMI</span>
       </a>
 
-      <nav class="main-nav" aria-label="Navigācija">
-        <ul>
-          <li><a href="#kategorijas">Kategorijas</a></li>
-          <li><a href="#statuss">Par platformu</a></li>
-          <li><a href="#padomi">Padomi</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#kontakti">Kontakti</a></li>
+      <nav aria-label="Galvenā navigācija">
+        <ul class="ss-nav-links">
+          <li><a href="#statuss">&bull; Iesniegt Sludinājumu</a></li>
+          <li><a href="#statuss">&bull; Mani Sludinājumi</a></li>
+          <li><a href="#kategorijas">&bull; Meklēšana</a></li>
+          <li><a href="#statuss">&bull; Memo</a></li>
+          <li><span class="ss-lang">LV</span></li>
         </ul>
       </nav>
-
-      <div>
-        <span class="header-badge">Izstrādes stadijā</span>
-      </div>
     </div>
   </header>
 
-  <!-- Ievada Sadaļa -->
-  <section class="hero-section">
-    <div class="container hero-layout">
-      <span class="status-pill">Informatīvā versija</span>
-      <h1 class="hero-title">Sludinājumu platforma samba.lv</h1>
-      <p class="hero-description">
-        Mūsdienīga un uzticama vide pirkšanai, pārdošanai un pakalpojumu meklēšanai Latvijā. 
-        Plašs kategoriju klāsts privātpersonām un uzņēmumiem.
-      </p>
-
-      <!-- Kategoriju Filtra Josla -->
-      <div class="search-filter-box">
+  <!-- Sub-Header ar meklēšanas joslu -->
+  <div class="ss-subbar">
+    <div class="container ss-subbar-inner">
+      <div class="ss-search-form">
         <input 
           type="text" 
           id="categorySearchInput" 
-          class="search-input" 
-          placeholder="Meklēt kategorijās (piem., auto, dzīvokļi, darbs, remonta pakalpojumi)..." 
-          aria-label="Kategoriju meklēšana"
+          class="ss-search-input" 
+          placeholder="Ievadiet meklējamo vārdu (piem., BMW, dzīvoklis, meistars)..." 
+          aria-label="Meklēt sludinājumos"
         />
-        <button id="searchButton" type="button" class="search-btn">Atlasīt</button>
+        <button id="searchButton" type="button" class="ss-search-btn">Meklēt</button>
       </div>
 
-      <div class="hero-highlights">
-        <div class="highlight-item">✓ <strong>Ātra un ērta</strong> navigācija</div>
-        <div class="highlight-item">✓ <strong>Pielāgots</strong> visām ierīcēm</div>
-        <div class="highlight-item">✓ <strong>Plašs</strong> sadaļu katalogs</div>
+      <div class="ss-info-badge">
+        <span>Informācija: Portāls ir sagatavošanas stadijā. Sludinājumu ievietošana tiks atvērta drīzumā.</span>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- Kategoriju Katalogs (SEO Bāze) -->
-  <section id="kategorijas" class="section">
+  <!-- ========================================================================
+       4-Kolonnu Kategoriju Katalogs (Exact SS.LV Grid)
+       ======================================================================== -->
+  <main class="ss-main-catalog" id="kategorijas">
     <div class="container">
-      <div class="section-head">
-        <h2>Sadaļu un kategoriju katalogs</h2>
-        <p>Pilns plānoto un sagatavoto sludinājumu sadaļu pārskats</p>
-      </div>
-
-      <div class="categories-container" id="categoriesGrid">
+      
+      <div class="ss-grid-4col" id="categoriesGrid">
         
-        <!-- 1. Transports -->
-        <div class="category-block">
-          <h3 class="category-title"><a href="/transports/">🚗 Transports &rarr;</a></h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/transports/">Vieglie auto</a></li>
-            <li class="subcat-item"><a href="/transports/">Apvidus auto (SUV)</a></li>
-            <li class="subcat-item"><a href="/transports/">Motocikli un motorolleri</a></li>
-            <li class="subcat-item"><a href="/transports/">Kravas automašīnas</a></li>
-            <li class="subcat-item"><a href="/transports/">Komerctransports un mikroautobusi</a></li>
-            <li class="subcat-item"><a href="/transports/">Rezerves daļas un aksesuāri</a></li>
-            <li class="subcat-item"><a href="/transports/">Riepas un diski</a></li>
-            <li class="subcat-item"><a href="/transports/">Ūdens transports un laivas</a></li>
-            <li class="subcat-item"><a href="/transports/">Auto noma un autoservisi</a></li>
+        <!-- ================= KOLONNA 1 ================= -->
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <a href="/darbs/" class="ss-cat-title">Darbs un bizness</a>
+            <svg class="ss-cat-icon" viewBox="0 0 44 38" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="6" y="8" width="32" height="26" rx="2"/>
+              <path d="M16 8V4h12v4"/>
+              <line x1="6" y1="18" x2="38" y2="18"/>
+            </svg>
+          </div>
+          <ul class="ss-subcat-list">
+            <li><a href="/darbs/">Vakances</a></li>
+            <li><a href="/darbs/">Meklē darbu</a></li>
+            <li><a href="/darbs/">Kursi, izglītība</a></li>
+            <li><a href="/darbs/">Darījumu kontakti</a></li>
+            <li><a href="/darbs/">Juridiskie pakalpojumi</a></li>
+            <li><a href="/darbs/">Finanšu pakalpojumi</a></li>
+            <li><a href="/darbs/">Tulkojumi</a></li>
+            <li><a href="/darbs/">Interneta pakalpojumi</a></li>
+            <li><a href="/darbs/">Dažādi</a></li>
           </ul>
         </div>
 
-        <!-- 2. Nekustamais īpašums -->
-        <div class="category-block">
-          <h3 class="category-title"><a href="/nekustamie-ipasumi/">🏠 Nekustamais Īpašums &rarr;</a></h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/nekustamie-ipasumi/">Dzīvokļi (Pārdošana)</a></li>
-            <li class="subcat-item"><a href="/nekustamie-ipasumi/">Dzīvokļi (Izīrēšana)</a></li>
-            <li class="subcat-item"><a href="/nekustamie-ipasumi/">Mājas un vasarnīcas</a></li>
-            <li class="subcat-item"><a href="/nekustamie-ipasumi/">Zemes gabali un meži</a></li>
-            <li class="subcat-item"><a href="/nekustamie-ipasumi/">Komerctelpas un biroji</a></li>
-            <li class="subcat-item"><a href="/nekustamie-ipasumi/">Garāžas un stāvvietas</a></li>
-            <li class="subcat-item"><a href="/nekustamie-ipasumi/">Īpašumi reģionos</a></li>
+        <!-- ================= KOLONNA 2 ================= -->
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <a href="/transports/" class="ss-cat-title">Transports</a>
+            <svg class="ss-cat-icon" viewBox="0 0 44 38" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 24l4-10h24l4 10v8h-4v-2H10v2H6v-8z"/>
+              <circle cx="12" cy="26" r="3"/>
+              <circle cx="32" cy="26" r="3"/>
+              <line x1="14" y1="14" x2="30" y2="14"/>
+            </svg>
+          </div>
+          <ul class="ss-subcat-list">
+            <li><a href="/transports/">Vieglie auto</a></li>
+            <li><a href="/transports/">Kravas automašīnas</a></li>
+            <li><a href="/transports/">Moto transports</a></li>
+            <li><a href="/transports/">Velosipēdi, skūteri</a></li>
+            <li><a href="/transports/">Vieglo auto maiņa</a></li>
+            <li><a href="/transports/">Remonts un rezerves daļas</a></li>
+            <li><a href="/transports/">Kravu un pasažieru pārvadājumi</a></li>
+            <li><a href="/transports/">Transporta noma</a></li>
+            <li><a href="/transports/">Cits...</a></li>
           </ul>
         </div>
 
-        <!-- 3. Darbs un pakalpojumi -->
-        <div class="category-block">
-          <h3 class="category-title"><a href="/darbs/">💼 Darbs un Pakalpojumi &rarr;</a></h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/darbs/">Vakances un darba piedāvājumi</a></li>
-            <li class="subcat-item"><a href="/darbs/">Meklē darbu / CV datubāze</a></li>
-            <li class="subcat-item"><a href="/darbs/">Būvniecība un remontdarbi</a></li>
-            <li class="subcat-item"><a href="/darbs/">Kravu pārvadājumi un loģistika</a></li>
-            <li class="subcat-item"><a href="/darbs/">IT, programmēšana un mārketings</a></li>
-            <li class="subcat-item"><a href="/darbs/">Juridiskie un grāmatvedības pakalpojumi</a></li>
-            <li class="subcat-item"><a href="/darbs/">Skaistumkopšana un veselība</a></li>
+        <!-- ================= KOLONNA 3 ================= -->
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <a href="/nekustamie-ipasumi/" class="ss-cat-title">Nekustamie īpašumi</a>
+            <svg class="ss-cat-icon" viewBox="0 0 44 38" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 18L22 4l18 14v16H4V18z"/>
+              <rect x="16" y="20" width="12" height="14"/>
+              <line x1="30" y1="10" x2="30" y2="6"/>
+              <line x1="34" y1="6" x2="30" y2="6"/>
+            </svg>
+          </div>
+          <ul class="ss-subcat-list">
+            <li><a href="/nekustamie-ipasumi/">Dzīvokļi</a></li>
+            <li><a href="/nekustamie-ipasumi/">Mājas, vasarnīcas</a></li>
+            <li><a href="/nekustamie-ipasumi/">Lauku viensētas</a></li>
+            <li><a href="/nekustamie-ipasumi/">Telpas</a></li>
+            <li><a href="/nekustamie-ipasumi/">Biroji</a></li>
+            <li><a href="/nekustamie-ipasumi/">Zeme</a></li>
+            <li><a href="/nekustamie-ipasumi/">Mežs</a></li>
+            <li><a href="/nekustamie-ipasumi/">Rieltora pakalpojumi</a></li>
+            <li><a href="/nekustamie-ipasumi/">Cits...</a></li>
           </ul>
         </div>
 
-        <!-- 4. Celtniecība un būvniecība -->
-        <div class="category-block">
-          <h3 class="category-title"><a href="/buvnieciba/">🔨 Būvniecība un Māja &rarr;</a></h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/buvnieciba/">Būvmateriāli un konstrukcijas</a></li>
-            <li class="subcat-item"><a href="/buvnieciba/">Rokas un elektroinstrumenti</a></li>
-            <li class="subcat-item"><a href="/buvnieciba/">Apkure, katli un kamīni</a></li>
-            <li class="subcat-item"><a href="/buvnieciba/">Santehnika un cauruļvadi</a></li>
-            <li class="subcat-item"><a href="/buvnieciba/">Dārza tehnika, zāles pļāvēji</a></li>
+        <!-- ================= KOLONNA 4 ================= -->
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <a href="/buvnieciba/" class="ss-cat-title">Celtniecība</a>
+            <svg class="ss-cat-icon" viewBox="0 0 44 38" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 24c0-10 8-16 16-16s16 6 16 16H6z"/>
+              <rect x="2" y="24" width="40" height="4" rx="2"/>
+              <line x1="22" y1="8" x2="22" y2="24"/>
+            </svg>
+          </div>
+          <ul class="ss-subcat-list">
+            <li><a href="/buvnieciba/">Būvmateriāli</a></li>
+            <li><a href="/buvnieciba/">Būvdarbi</a></li>
+            <li><a href="/buvnieciba/">Darba rīki un tehnika</a></li>
+            <li><a href="/buvnieciba/">Instrumentu un tehnikas īre</a></li>
+            <li><a href="/buvnieciba/">Santehnika</a></li>
+            <li><a href="/buvnieciba/">Dārza tehnika</a></li>
+            <li><a href="/buvnieciba/">Projekti, dizains</a></li>
+            <li><a href="/buvnieciba/">Pārvadāšana un iekraušana</a></li>
+            <li><a href="/buvnieciba/">Dažādi</a></li>
           </ul>
         </div>
 
-        <!-- 5. Elektronika un tehnika -->
-        <div class="category-block">
-          <h3 class="category-title"><a href="/elektronika/">📱 Elektronika un Tehnika &rarr;</a></h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/elektronika/">Mobilie tālruņi un viedpulksteņi</a></li>
-            <li class="subcat-item"><a href="/elektronika/">Portatīvie un stacionārie datori</a></li>
-            <li class="subcat-item"><a href="/elektronika/">Sadzīves tehnika un virtuve</a></li>
-            <li class="subcat-item"><a href="/elektronika/">Televizori un monitori</a></li>
-            <li class="subcat-item"><a href="/elektronika/">Audio un video tehnika</a></li>
-            <li class="subcat-item"><a href="/elektronika/">Spēļu konsoles un spēles</a></li>
+        <!-- ================= RINDAS 2 BLOKI ================= -->
+
+        <!-- 5. Elektrotehnika -->
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <a href="/elektronika/" class="ss-cat-title">Elektrotehnika</a>
+            <svg class="ss-cat-icon" viewBox="0 0 44 38" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="6" width="36" height="22" rx="2"/>
+              <line x1="16" y1="34" x2="28" y2="34"/>
+              <line x1="22" y1="28" x2="22" y2="34"/>
+            </svg>
+          </div>
+          <ul class="ss-subcat-list">
+            <li><a href="/elektronika/">Sakaru līdzekļi</a></li>
+            <li><a href="/elektronika/">Sadzīves tehnika</a></li>
+            <li><a href="/elektronika/">Datori un orgtehnika</a></li>
+            <li><a href="/elektronika/">Audio, Video, DVD, SAT</a></li>
+            <li><a href="/elektronika/">Baterijas, Akumulatori</a></li>
+            <li><a href="/elektronika/">Televizori</a></li>
+            <li><a href="/elektronika/">Foto un optika</a></li>
+            <li><a href="/elektronika/">GPS navigācija</a></li>
+            <li><a href="/elektronika/">Dažādi un remonts</a></li>
           </ul>
         </div>
 
-        <!-- 6. Mājai un mēbeles -->
-        <div class="category-block">
-          <h3 class="category-title"><a href="/majai/">🛋️ Mājai un Mēbeles &rarr;</a></h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/majai/">Dīvāni, gultas un skapji</a></li>
-            <li class="subcat-item"><a href="/majai/">Virtuves iekārtas un galdi</a></li>
-            <li class="subcat-item"><a href="/majai/">Lampas un apgaismojums</a></li>
-            <li class="subcat-item"><a href="/majai/">Paklāji, aizkari un tekstils</a></li>
-            <li class="subcat-item"><a href="/majai/">Trauki un virtuves piederumi</a></li>
+        <!-- 6. Drēbes, apavi -->
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <a href="/apgerbi/" class="ss-cat-title">Drēbes, apavi</a>
+            <svg class="ss-cat-icon" viewBox="0 0 44 38" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 10c0-4 4-4 4-2 0 3-4 4-4 4L6 28h32L22 12"/>
+              <circle cx="24" cy="8" r="2"/>
+            </svg>
+          </div>
+          <ul class="ss-subcat-list">
+            <li><a href="/apgerbi/">Sieviešu apģērbi</a></li>
+            <li><a href="/apgerbi/">Vīriešu apģērbi</a></li>
+            <li><a href="/apgerbi/">Bērnu apģērbi, apavi</a></li>
+            <li><a href="/apgerbi/">Apavi</a></li>
+            <li><a href="/apgerbi/">Brilles, siksnas, somas</a></li>
+            <li><a href="/apgerbi/">Aksesuāri, rotaslietas</a></li>
+            <li><a href="/apgerbi/">Specapģērbi</a></li>
+            <li><a href="/apgerbi/">Šuvēju un ateljē pakalpojumi</a></li>
+            <li><a href="/apgerbi/">Dažādi</a></li>
           </ul>
         </div>
 
-        <!-- 7. Apģērbi un apavi -->
-        <div class="category-block">
-          <h3 class="category-title"><a href="/apgerbi/">👗 Apģērbi un Apavi &rarr;</a></h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/apgerbi/">Sieviešu apģērbi un kleitas</a></li>
-            <li class="subcat-item"><a href="/apgerbi/">Vīriešu apģērbi un uzvalki</a></li>
-            <li class="subcat-item"><a href="/apgerbi/">Apavi, zābaki un kedas</a></li>
-            <li class="subcat-item"><a href="/apgerbi/">Somas, mugursomas un aksesuāri</a></li>
-            <li class="subcat-item"><a href="/apgerbi/">Pulksteņi un rotaslietas</a></li>
+        <!-- 7. Mājai -->
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <a href="/majai/" class="ss-cat-title">Mājai</a>
+            <svg class="ss-cat-icon" viewBox="0 0 44 38" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 12c0-4 4-6 8-6h12c4 0 8 2 8 6v14H8V12z"/>
+              <rect x="4" y="16" width="6" height="14" rx="2"/>
+              <rect x="34" y="16" width="6" height="14" rx="2"/>
+              <line x1="8" y1="30" x2="6" y2="36"/>
+              <line x1="36" y1="30" x2="38" y2="36"/>
+            </svg>
+          </div>
+          <ul class="ss-subcat-list">
+            <li><a href="/majai/">Mēbeles, interjers</a></li>
+            <li><a href="/majai/">Veselība, skaistums</a></li>
+            <li><a href="/majai/">Dārglietas, rotaslietas</a></li>
+            <li><a href="/majai/">Dāvanas, suvenīri</a></li>
+            <li><a href="/majai/">Roku darba izstrādājumi</a></li>
+            <li><a href="/majai/">Antikvariāts, gleznas</a></li>
+            <li><a href="/majai/">Mājas augi</a></li>
+            <li><a href="/majai/">Cits...</a></li>
+            <li><a href="/majai/">Atrasts - pazaudēts</a></li>
           </ul>
         </div>
 
-        <!-- 8. Bērnu pasaule -->
-        <div class="category-block">
-          <h3 class="category-title"><a href="/berniem/">🧸 Bērnu Pasaule &rarr;</a></h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/berniem/">Bērnu ratiņi (2in1, 3in1, pastaigu)</a></li>
-            <li class="subcat-item"><a href="/berniem/">Autosēdeklīši un bāzes</a></li>
-            <li class="subcat-item"><a href="/berniem/">Bērnu gultiņas un mēbeles</a></li>
-            <li class="subcat-item"><a href="/berniem/">Rotaļlietas un Lego konstruktori</a></li>
+        <!-- 8. Ražošana -->
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <a href="/razosana/" class="ss-cat-title">Ražošana</a>
+            <svg class="ss-cat-icon" viewBox="0 0 44 38" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 32V16l10 8V16l10 8V10h16v22H4z"/>
+              <line x1="30" y1="16" x2="34" y2="16"/>
+              <line x1="30" y1="22" x2="34" y2="22"/>
+            </svg>
+          </div>
+          <ul class="ss-subcat-list">
+            <li><a href="/razosana/">Iekārta</a></li>
+            <li><a href="/razosana/">Ražošana, pasūtījumi</a></li>
+            <li><a href="/razosana/">Saimniecības darbi</a></li>
+            <li><a href="/razosana/">Celtniecība un remonts</a></li>
+            <li><a href="/razosana/">Pārvadāšana un iekraušana</a></li>
+            <li><a href="/razosana/">Darījumu kontakti</a></li>
+            <li><a href="/razosana/">Pārtika</a></li>
+            <li><a href="/razosana/">Malka, briketes, granulas</a></li>
+            <li><a href="/razosana/">Cits...</a></li>
           </ul>
         </div>
 
-        <!-- 9. Dzīvnieki -->
-        <div class="category-block">
-          <h3 class="category-title"><a href="/dzivnieki/">🐾 Mājdzīvnieki &rarr;</a></h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/dzivnieki/">Suņi un kucēni</a></li>
-            <li class="subcat-item"><a href="/dzivnieki/">Kaķi un kaķēni</a></li>
-            <li class="subcat-item"><a href="/dzivnieki/">Lauksaimniecības dzīvnieki</a></li>
-            <li class="subcat-item"><a href="/dzivnieki/">Zoopreces un barība</a></li>
+        <!-- ================= RINDAS 3 BLOKI ================= -->
+
+        <!-- 9. Bērniem -->
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <a href="/berniem/" class="ss-cat-title">Bērniem</a>
+            <svg class="ss-cat-icon" viewBox="0 0 44 38" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="22" cy="18" r="8"/>
+              <circle cx="15" cy="11" r="3"/>
+              <circle cx="29" cy="11" r="3"/>
+              <path d="M12 32c0-6 4-10 10-10s10 4 10 10"/>
+            </svg>
+          </div>
+          <ul class="ss-subcat-list">
+            <li><a href="/berniem/">Viss skolai</a></li>
+            <li><a href="/berniem/">Bērnu apģērbi, apavi</a></li>
+            <li><a href="/berniem/">Rotaļas, šūpoles</a></li>
+            <li><a href="/berniem/">Ratiņi</a></li>
+            <li><a href="/berniem/">Bērnu mēbeles</a></li>
+            <li><a href="/berniem/">Autosēdekļi, somas pārnešanai</a></li>
+            <li><a href="/berniem/">Aksesuāri, ēdiens</a></li>
+            <li><a href="/berniem/">Pulciņi, dārziņi, sekcijas</a></li>
+            <li><a href="/berniem/">Bērnu pasākumi</a></li>
+            <li><a href="/berniem/">Dažādi</a></li>
           </ul>
         </div>
 
-        <!-- 10. Atpūta un sports -->
-        <div class="category-block">
-          <h3 class="category-title"><a href="/atputa-sports/">⚽ Sports un Atpūta &rarr;</a></h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/atputa-sports/">Velosipēdi un skrejriteņi</a></li>
-            <li class="subcat-item"><a href="/atputa-sports/">Trenažieri un sporta inventārs</a></li>
-            <li class="subcat-item"><a href="/atputa-sports/">Makšķerēšana un medības</a></li>
-            <li class="subcat-item"><a href="/atputa-sports/">Mūzikas instrumenti un grāmatas</a></li>
+        <!-- 10. Dzīvnieki -->
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <a href="/dzivnieki/" class="ss-cat-title">Dzīvnieki</a>
+            <svg class="ss-cat-icon" viewBox="0 0 44 38" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 26c-4 0-8-4-8-8 0-6 6-10 12-10l4 4 4-4c6 0 12 4 12 10 0 4-4 8-8 8"/>
+              <circle cx="16" cy="16" r="1.5" fill="currentColor"/>
+              <circle cx="24" cy="16" r="1.5" fill="currentColor"/>
+              <path d="M34 22c2 4 6 6 6 10"/>
+            </svg>
+          </div>
+          <ul class="ss-subcat-list">
+            <li><a href="/dzivnieki/">Suņi, kucēni</a></li>
+            <li><a href="/dzivnieki/">Kaķi, kaķēni</a></li>
+            <li><a href="/dzivnieki/">Grauzēji</a></li>
+            <li><a href="/dzivnieki/">Papagaiļi un putni</a></li>
+            <li><a href="/dzivnieki/">Zivtiņas, akvāriji</a></li>
+            <li><a href="/dzivnieki/">Eksotiskie dzīvnieki</a></li>
+            <li><a href="/dzivnieki/">Lauksaimniecības dzīvnieki</a></li>
+            <li><a href="/dzivnieki/">Veterinārija</a></li>
+            <li><a href="/dzivnieki/">Atrasts - pazaudēts</a></li>
+            <li><a href="/dzivnieki/">Dažādi</a></li>
           </ul>
         </div>
 
-        <!-- 11. Bizness un ražošana -->
-        <div class="category-block">
-          <h3 class="category-title"><a href="/bizness/">⚙️ Bizness un Ražošana &rarr;</a></h3>
-          <ul class="subcat-list">
-            <li class="subcat-item"><a href="/bizness/">Lauksaimniecības tehnika un traktori</a></li>
-            <li class="subcat-item"><a href="/bizness/">Rūpnieciskās iekārtas un darbgaldi</a></li>
-            <li class="subcat-item"><a href="/bizness/">Noliktavu aprīkojums un iekrāvēji</a></li>
-            <li class="subcat-item"><a href="/bizness/">Gatavs bizness un izejvielas</a></li>
+        <!-- 11. Lauksaimniecība -->
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <a href="/lauksaimnieciba/" class="ss-cat-title">Lauksaimniecība</a>
+            <svg class="ss-cat-icon" viewBox="0 0 44 38" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="14" cy="26" r="8"/>
+              <circle cx="34" cy="28" r="5"/>
+              <path d="M14 18V8h12v10h8v10H20"/>
+            </svg>
+          </div>
+          <ul class="ss-subcat-list">
+            <li><a href="/lauksaimnieciba/">Lopkopība</a></li>
+            <li><a href="/lauksaimnieciba/">Putnkopība</a></li>
+            <li><a href="/lauksaimnieciba/">Zivju rūpniecība</a></li>
+            <li><a href="/lauksaimnieciba/">Lauksaimniecības darbi</a></li>
+            <li><a href="/lauksaimnieciba/">Lauksaimniecības tehnika</a></li>
+            <li><a href="/lauksaimnieciba/">Dārzeņu un dārzkopība</a></li>
+            <li><a href="/lauksaimnieciba/">Mēslojumi un ķimikālijas</a></li>
+            <li><a href="/lauksaimnieciba/">Sēklas un stādi</a></li>
+            <li><a href="/lauksaimnieciba/">Pārtika</a></li>
+            <li><a href="/lauksaimnieciba/">Dažādi</a></li>
+          </ul>
+        </div>
+
+        <!-- 12. Atpūta, hobiji -->
+        <div class="ss-category-block">
+          <div class="ss-cat-header">
+            <a href="/atputa-sports/" class="ss-cat-title">Atpūta, hobiji</a>
+            <svg class="ss-cat-icon" viewBox="0 0 44 38" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 32c8-4 20-4 28 0"/>
+              <path d="M22 30c-2-8 0-14 4-18"/>
+              <path d="M26 12c-6-4-12-2-14 2"/>
+              <path d="M26 12c6-4 12-2 14 2"/>
+              <path d="M26 12c0-8-6-10-8-8"/>
+            </svg>
+          </div>
+          <ul class="ss-subcat-list">
+            <li><a href="/atputa-sports/">Hobiji, vaļasprieki</a></li>
+            <li><a href="/atputa-sports/">Kolekcionēšana</a></li>
+            <li><a href="/atputa-sports/">Biļetes, koncerti, kur aiziet</a></li>
+            <li><a href="/atputa-sports/">Mūzika, instrumenti, apmācība</a></li>
+            <li><a href="/atputa-sports/">Grāmatas</a></li>
+            <li><a href="/atputa-sports/">Sports, aktīvā atpūta</a></li>
+            <li><a href="/atputa-sports/">Medības, zveja</a></li>
+            <li><a href="/atputa-sports/">Tūrisms</a></li>
+            <li><a href="/atputa-sports/">Iepazīšanās</a></li>
+            <li><a href="/atputa-sports/">Cits ...</a></li>
           </ul>
         </div>
 
       </div>
-    </div>
-  </section>
 
-  <!-- Informācijas un Statusa Bloks -->
-  <section id="statuss" class="section status-section">
-    <div class="container">
-      <div class="status-box">
-        <h3>Platformas izstrādes un palaišanas statuss</h3>
+      <!-- SEO un Statusa Paziņojums -->
+      <section class="ss-info-box" id="statuss">
+        <h3>Samba.lv Sludinājumu Portāla Statuss</h3>
         <p>
-          Portāls <strong>samba.lv</strong> pašlaik atrodas aktīvā tehniskās sagatavošanas posmā. 
-          Lietotāju reģistrācija un sludinājumu publicēšanas funkcionalitāte tiks atvērta pakāpeniski pēc sistēmas moduļu pabeigšanas.
+          Portāls <strong>samba.lv</strong> pašlaik atrodas sagatavošanas un testēšanas posmā. Pilna sludinājumu ievietošana un lietotāju reģistrācija tiks atvērta drīzumā.
         </p>
+        <p style="margin-bottom: 0;">
+          Jautājumiem par sadarbību un automātisko datu ielādi (XML): <a href="mailto:info@samba.lv" style="color: var(--ss-green); font-weight: bold;">info@samba.lv</a>.
+        </p>
+      </section>
 
-        <div class="status-grid">
-          <div class="status-grid-item">
-            <h4>Sludinājumu ievietošana</h4>
-            <p>Drīzumā būs pieejama gan privātpersonām, gan juridiskām personām.</p>
-          </div>
-          <div class="status-grid-item">
-            <h4>Uzņēmumu integrācija</h4>
-            <p>Tiek izstrādāts XML un API atbalsts lielāka apjoma datu sinhronizācijai.</p>
-          </div>
-          <div class="status-grid-item">
-            <h4>Sadarbības jautājumi</h4>
-            <p>Jautājumiem un ierosinājumiem: <a href="mailto:info@samba.lv" style="color: var(--color-primary); font-weight: 600;">info@samba.lv</a></p>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
+  </main>
 
-  <!-- SEO Noderīgi Raksti -->
-  <section id="padomi" class="section">
+  <!-- ========================================================================
+       Kājene (Footer - SS Stils)
+       ======================================================================== -->
+  <footer class="ss-footer" id="kontakti">
     <div class="container">
-      <div class="section-head">
-        <h2>Padomi un ieteikumi</h2>
-        <p>Praktiska informācija pircējiem, pārdevējiem un pakalpojumu sniedzējiem</p>
-      </div>
-
-      <div class="guides-grid">
-        <div class="guide-item">
-          <div class="guide-badge">Auto</div>
-          <h3>Kā sagatavot automašīnu pārdošanai internetā</h3>
-          <p>Kvalitatīvas fotogrāfijas, patiess tehniskā stāvokļa apraksts un servisa vēstures pieejamība būtiski paātrina darījuma noslēgšanu.</p>
-        </div>
-
-        <div class="guide-item">
-          <div class="guide-badge">Nekustamais īpašums</div>
-          <h3>Nekustamā īpašuma īre un drošība darījumos</h3>
-          <p>Ieteikumi īres līgumu sastādīšanā, skaitītāju rādījumu fiksēšanā un drošos norēķinos starp izīrētāju un īrnieku.</p>
-        </div>
-
-        <div class="guide-item">
-          <div class="guide-badge">Pakalpojumi</div>
-          <h3>Pakalpojumu un darba piedāvājumu noformēšana</h3>
-          <p>Kā strukturēt darba sludinājumu vai meistara pakalpojuma profilu, lai piesaistītu atbilstošus klientus un kandidātus.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ Bloks -->
-  <section id="faq" class="section" style="background-color: var(--color-bg-alt); border-top: 1px solid var(--color-border);">
-    <div class="container">
-      <div class="section-head">
-        <h2>Biežāk uzdotie jautājumi</h2>
-        <p>Pamatjautājumi par samba.lv darbību</p>
-      </div>
-
-      <div class="faq-container">
-        <div class="faq-row">
-          <button class="faq-toggle" type="button">
-            <span>Kas ir samba.lv?</span>
-            <span class="faq-icon">▾</span>
-          </button>
-          <div class="faq-content">
-            <p>Samba.lv ir universāla sludinājumu platforma Latvijā, kas apvieno auto tirdzniecības, nekustamo īpašumu, vakanču, tehnikas un dažādu pakalpojumu sadaļas vienotā sistēmā.</p>
-          </div>
-        </div>
-
-        <div class="faq-row">
-          <button class="faq-toggle" type="button">
-            <span>Kad būs iespējams ievietot sludinājumu?</span>
-            <span class="faq-icon">▾</span>
-          </button>
-          <div class="faq-content">
-            <p>Sludinājumu ievietošana un reģistrācija pašlaik tiek konfigurēta. Tuvākajā laikā šī iespēja tiks aktivizēta visiem lietotājiem.</p>
-          </div>
-        </div>
-
-        <div class="faq-row">
-          <button class="faq-toggle" type="button">
-            <span>Vai portāls būs piemērots uzņēmumiem un tirgotājiem?</span>
-            <span class="faq-icon">▾</span>
-          </button>
-          <div class="faq-content">
-            <p>Jā, platformā tiek paredzēta ērta sludinājumu pārvaldība uzņēmumiem, auto dīleriem, nekustamo īpašumu aģentūrām un pakalpojumu sniedzējiem.</p>
-          </div>
-        </div>
-
-        <div class="faq-row">
-          <button class="faq-toggle" type="button">
-            <span>Kā sazināties ar portāla uzturētājiem?</span>
-            <span class="faq-icon">▾</span>
-          </button>
-          <div class="faq-content">
-            <p>Ar mums iespējams sazināties, rakstot uz e-pastu: <a href="mailto:info@samba.lv">info@samba.lv</a>.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Kājene -->
-  <footer id="kontakti" class="site-footer">
-    <div class="container">
-      <div class="footer-top">
-        <div>
-          <div class="brand-logo" style="color: #FFFFFF;">
-            <img src="favicon.svg" alt="Samba Logo" />
-            <span>samba<span class="tld">.lv</span></span>
-          </div>
-          <p class="footer-desc">
-            Latvijas sludinājumu portāls. Auto, nekustamais īpašums, darbs, tehnika un pakalpojumi vienuviet.
-          </p>
-        </div>
-
-        <div class="footer-col">
-          <h4>Kategorijas</h4>
-          <ul class="footer-links">
-            <li><a href="#kategorijas">Transports</a></li>
-            <li><a href="#kategorijas">Nekustamais īpašums</a></li>
-            <li><a href="#kategorijas">Darbs un pakalpojumi</a></li>
-            <li><a href="#kategorijas">Elektronika un tehnika</a></li>
-            <li><a href="#kategorijas">Būvniecība un māja</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Informācija</h4>
-          <ul class="footer-links">
-            <li><a href="#statuss">Par platformu</a></li>
-            <li><a href="#padomi">Padomi</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="sitemap.xml">Vietnes karte (Sitemap)</a></li>
-            <li>E-pasts: <a href="mailto:info@samba.lv">info@samba.lv</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div>&copy; 2026 Samba.lv. Visas tiesības aizsargātas.</div>
-        <div>Domēns: samba.lv &bull; Rīga, Latvija</div>
+      <ul class="ss-footer-links">
+        <li><a href="#statuss">Noteikumi</a></li>
+        <li>|</li>
+        <li><a href="#statuss">Sīkdatnes</a></li>
+        <li>|</li>
+        <li><a href="mailto:info@samba.lv">Saikne ar redaktoru</a></li>
+        <li>|</li>
+        <li><a href="mailto:info@samba.lv">Reklāma</a></li>
+        <li>|</li>
+        <li><a href="mailto:info@samba.lv">Sadarbība</a></li>
+        <li>|</li>
+        <li><a href="/sitemap.xml">Vietnes karte (Sitemap)</a></li>
+      </ul>
+      <div class="ss-copyright">
+        Sludinājumi &copy; samba.lv 2026
       </div>
     </div>
   </footer>
