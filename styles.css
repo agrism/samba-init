@@ -1,16 +1,21 @@
 /* ==========================================================================
-   samba.lv - SS.COM Stila Sludinājumu Portāls
-   Autentisks 4-kolonnu kataloga izkārtojums ar klasiskajām sadaļu līnijām un ikonām.
+   samba.lv - Sludinājumu Portāls
+   Mūsdienīgs, acīm ērts un uzticams Safīra Zils (Royal Navy) stils.
    ========================================================================== */
 
 :root {
-  --ss-green: #257925;
-  --ss-green-dark: #1b631b;
-  --ss-green-light: #eef7ee;
-  --ss-text: #1a1a1a;
-  --ss-text-muted: #555555;
-  --ss-border: #257925;
-  --ss-bg: #FFFFFF;
+  --brand-primary: #2563EB;       /* Dzidrs, patīkams karaliski zils akcents */
+  --brand-primary-dark: #1E40AF;  /* Dziļi zils tonis pogām un saitēm */
+  --brand-header-bg: #1E293B;     /* Mierīgs, elegants tumši zils/pelēks galvenes fons */
+  --brand-header-grad: linear-gradient(180deg, #1E3A8A 0%, #0F172A 100%);
+  --brand-subtle-bg: #F8FAFC;     /* Acīm maigs, gaišs fona tonis */
+  --brand-border: #2563EB;        /* Sadaļu līniju akcents */
+  --brand-border-subtle: #E2E8F0;
+  
+  --text-main: #0F172A;
+  --text-muted: #64748B;
+  --text-links: #1E293B;
+  
   --font-family: Arial, Helvetica, "Segoe UI", sans-serif;
 }
 
@@ -22,8 +27,8 @@
 
 body {
   font-family: var(--font-family);
-  background-color: var(--ss-bg);
-  color: var(--ss-text);
+  background-color: #FFFFFF;
+  color: var(--text-main);
   line-height: 1.4;
   min-height: 100vh;
   display: flex;
@@ -43,13 +48,13 @@ a {
 }
 
 /* ==========================================================================
-   Top Header Bar (SS Stils)
-   ========================================================================== */
+   Top Header Bar (Mūsdienīgs Safīra Zils)
+   ======================================================================== */
 .ss-top-header {
-  background: linear-gradient(180deg, #2d8a2d 0%, #1e691e 100%);
+  background: var(--brand-header-grad);
   color: #FFFFFF;
-  padding: 8px 0;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  padding: 9px 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
 }
 
 .ss-header-inner {
@@ -69,14 +74,14 @@ a {
   font-weight: 900;
   letter-spacing: -0.5px;
   line-height: 1;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .ss-logo-subtitle {
   font-size: 0.65rem;
   font-weight: 700;
   letter-spacing: 2.5px;
-  color: #D4F4D4;
+  color: #93C5FD;
   margin-top: 2px;
 }
 
@@ -85,7 +90,7 @@ a {
   align-items: center;
   gap: 20px;
   list-style: none;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   font-weight: 700;
 }
 
@@ -94,18 +99,19 @@ a {
   display: flex;
   align-items: center;
   gap: 5px;
+  transition: color 0.15s ease;
 }
 
 .ss-nav-links a:hover {
   text-decoration: underline;
-  color: #E8FFE8;
+  color: #BFDBFE;
 }
 
 .ss-lang {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: bold;
-  padding: 2px 6px;
-  background: rgba(0, 0, 0, 0.2);
+  padding: 2px 7px;
+  background: rgba(255, 255, 255, 0.15);
   border-radius: 3px;
 }
 
@@ -113,8 +119,8 @@ a {
    Sub-Header Informācija & Meklēšana
    ========================================================================== */
 .ss-subbar {
-  background: #F4F8F4;
-  border-bottom: 1px solid #D8E6D8;
+  background: var(--brand-subtle-bg);
+  border-bottom: 1px solid var(--brand-border-subtle);
   padding: 10px 0;
   font-size: 0.88rem;
 }
@@ -137,40 +143,44 @@ a {
 
 .ss-search-input {
   width: 100%;
-  padding: 6px 10px;
+  padding: 7px 12px;
   font-size: 0.88rem;
-  border: 1px solid #AACCAA;
-  border-radius: 3px;
+  border: 1px solid #CBD5E1;
+  border-radius: 4px;
   outline: none;
+  color: var(--text-main);
+  background: #FFFFFF;
 }
 
 .ss-search-input:focus {
-  border-color: var(--ss-green);
+  border-color: var(--brand-primary);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
 }
 
 .ss-search-btn {
-  background: var(--ss-green);
+  background: var(--brand-primary);
   color: #FFFFFF;
   border: none;
-  border-radius: 3px;
-  padding: 6px 14px;
+  border-radius: 4px;
+  padding: 7px 16px;
   font-size: 0.88rem;
   font-weight: 700;
   cursor: pointer;
+  transition: background 0.15s ease;
 }
 
 .ss-search-btn:hover {
-  background: var(--ss-green-dark);
+  background: var(--brand-primary-dark);
 }
 
 .ss-info-badge {
   font-size: 0.82rem;
-  color: #2b632b;
-  font-weight: 600;
+  color: var(--text-muted);
+  font-weight: 500;
 }
 
 /* ==========================================================================
-   4-Kolonnu Kategoriju Katalogs (Exact SS.LV Grid)
+   4-Kolonnu Kategoriju Katalogs (4 Columns Grid)
    ========================================================================== */
 .ss-main-catalog {
   padding: 24px 0 40px;
@@ -180,7 +190,7 @@ a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 28px;
-  row-gap: 24px;
+  row-gap: 26px;
 }
 
 .ss-category-block {
@@ -192,7 +202,7 @@ a {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  border-bottom: 2px solid var(--ss-border);
+  border-bottom: 2px solid var(--brand-border);
   padding-bottom: 4px;
   margin-bottom: 10px;
   height: 48px;
@@ -201,19 +211,21 @@ a {
 .ss-cat-title {
   font-size: 1.12rem;
   font-weight: 700;
-  color: #000000;
+  color: var(--text-main);
   line-height: 1.2;
 }
 
 .ss-cat-title:hover {
-  color: var(--ss-green);
+  color: var(--brand-primary);
   text-decoration: underline;
 }
 
 .ss-cat-icon {
   width: 44px;
   height: 38px;
-  color: var(--ss-green);
+  max-width: 44px;
+  max-height: 38px;
+  color: var(--brand-primary);
   flex-shrink: 0;
   margin-bottom: -2px;
 }
@@ -228,14 +240,15 @@ a {
 
 .ss-subcat-list li a {
   font-size: 0.86rem;
-  color: #111111;
+  color: var(--text-links);
   display: block;
   padding: 1px 0;
   line-height: 1.35;
+  transition: color 0.1s ease;
 }
 
 .ss-subcat-list li a:hover {
-  color: var(--ss-green);
+  color: var(--brand-primary);
   text-decoration: underline;
 }
 
@@ -243,11 +256,11 @@ a {
    Informatīvais un SEO Bloks
    ========================================================================== */
 .ss-info-box {
-  margin-top: 32px;
-  padding: 16px 20px;
-  background: #FAFDFB;
-  border: 1px solid #D6E8D6;
-  border-left: 4px solid var(--ss-green);
+  margin-top: 36px;
+  padding: 18px 22px;
+  background: var(--brand-subtle-bg);
+  border: 1px solid var(--brand-border-subtle);
+  border-left: 4px solid var(--brand-primary);
   border-radius: 4px;
   font-size: 0.88rem;
   line-height: 1.5;
@@ -255,25 +268,25 @@ a {
 
 .ss-info-box h3 {
   font-size: 1rem;
-  color: var(--ss-green-dark);
+  color: var(--brand-primary-dark);
   margin-bottom: 6px;
 }
 
 .ss-info-box p {
-  color: #333333;
+  color: var(--text-muted);
   margin-bottom: 6px;
 }
 
 /* ==========================================================================
-   Footer (SS.LV Stils)
+   Footer
    ========================================================================== */
 .ss-footer {
-  background: #FAFAFA;
-  border-top: 1px solid #E5E5E5;
-  padding: 18px 0;
+  background: var(--brand-subtle-bg);
+  border-top: 1px solid var(--brand-border-subtle);
+  padding: 20px 0;
   margin-top: auto;
   font-size: 0.82rem;
-  color: #555555;
+  color: var(--text-muted);
   text-align: center;
 }
 
@@ -288,21 +301,21 @@ a {
 }
 
 .ss-footer-links a {
-  color: #333333;
+  color: var(--text-links);
 }
 
 .ss-footer-links a:hover {
   text-decoration: underline;
-  color: var(--ss-green);
+  color: var(--brand-primary);
 }
 
 .ss-copyright {
   font-size: 0.78rem;
-  color: #777777;
+  color: var(--text-muted);
 }
 
 /* ==========================================================================
-   Responsīvais Izkārtojums (Mērogošana)
+   Responsīvais Izkārtojums
    ========================================================================== */
 @media (max-width: 1100px) {
   .ss-grid-4col {
