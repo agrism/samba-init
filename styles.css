@@ -1,15 +1,16 @@
 /* ==========================================================================
    samba.lv - Sludinājumu Portāls
-   Mūsdienīgs, svaigs un acīm patīkams Tirkīza / Teal (Nordic Teal) stils.
+   Gaišs, moderns, draudzīgs un acīm patīkams Gaiši Zilais (Azure / Ocean Blue) stils.
    ========================================================================== */
 
 :root {
-  --brand-primary: #0D9488;       /* Dzidrs, elegants tirkīza (Teal) tonis */
-  --brand-primary-dark: #0F766E;  /* Dziļš tirkīza tonis pogām un saitēm */
-  --brand-header-bg: #115E59;     /* Dziļš ziemeļu tirkīza/slānekļa galvenes fons */
-  --brand-header-grad: linear-gradient(180deg, #115E59 0%, #042F2E 100%);
+  --brand-primary: #2563EB;       /* Dzidrs, dinamisks zils tonis */
+  --brand-primary-light: #3B82F6; /* Gaišāks zils akcentiem un līnijām */
+  --brand-primary-dark: #1D4ED8;  /* Dziļāks zils pogu stāvokļiem */
+  --brand-header-bg: #2563EB;     /* Gaišs, svaigs zils galvenes fons */
+  --brand-header-grad: linear-gradient(180deg, #2563EB 0%, #1D4ED8 100%);
   --brand-subtle-bg: #F8FAFC;     /* Acīm maigs, gaišs fona tonis */
-  --brand-border: #0D9488;        /* Sadaļu līniju akcents */
+  --brand-border: #3B82F6;        /* Sadaļu līniju gaišais akcents */
   --brand-border-subtle: #E2E8F0;
   
   --text-main: #0F172A;
@@ -48,13 +49,13 @@ a {
 }
 
 /* ==========================================================================
-   Top Header Bar (Mūsdienīgs Nordic Teal)
+   Top Header Bar (Gaišs un Svaigs Zilais)
    ========================================================================== */
 .ss-top-header {
   background: var(--brand-header-grad);
   color: #FFFFFF;
-  padding: 9px 0;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 0;
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.2);
 }
 
 .ss-header-inner {
@@ -74,14 +75,14 @@ a {
   font-weight: 900;
   letter-spacing: -0.5px;
   line-height: 1;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .ss-logo-subtitle {
   font-size: 0.65rem;
   font-weight: 700;
   letter-spacing: 2.5px;
-  color: #99F6E4;
+  color: #DBEAFE;
   margin-top: 2px;
 }
 
@@ -104,14 +105,14 @@ a {
 
 .ss-nav-links a:hover {
   text-decoration: underline;
-  color: #CCFBF1;
+  color: #DBEAFE;
 }
 
 .ss-lang {
   font-size: 0.85rem;
   font-weight: bold;
   padding: 2px 7px;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.22);
   border-radius: 3px;
 }
 
@@ -154,7 +155,7 @@ a {
 
 .ss-search-input:focus {
   border-color: var(--brand-primary);
-  box-shadow: 0 0 0 2px rgba(13, 148, 136, 0.18);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
 }
 
 .ss-search-btn {
@@ -268,7 +269,7 @@ a {
 
 .ss-info-box h3 {
   font-size: 1rem;
-  color: var(--brand-primary-dark);
+  color: var(--brand-primary);
   margin-bottom: 6px;
 }
 
