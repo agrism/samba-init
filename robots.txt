@@ -1,0 +1,6 @@
+# robots.txt for https://samba.lv/
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://samba.lv/sitemap.xml
